@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 588" width="720" height="588" font-family="Segoe UI, system-ui, -apple-system, sans-serif"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3b3b3b"/></marker></defs><rect width="720" height="588" rx="12" fill="#ffffff"/>
+<text x="20" y="34" font-size="14" font-weight="600" fill="#242424" text-anchor="start">A test is linked to one clause of an NSM measure. The link says how much the test proves.</text>
+<text x="20" y="56" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">Only direct and partial links count as coverage of the measure.</text>
+<rect x="20" y="78" width="680" height="128" rx="8" fill="#f3f7fc" stroke="#0f6cbd" stroke-width="1.5"/>
+<rect x="38" y="116" width="8" height="14" rx="2" fill="#13a10e"/>
+<rect x="50" y="106" width="8" height="24" rx="2" fill="#13a10e"/>
+<rect x="62" y="96" width="8" height="34" rx="2" fill="#13a10e"/>
+<text x="92" y="102" font-size="11" font-weight="700" fill="#0f6cbd" text-anchor="start">DIRECT</text>
+<text x="92" y="124" font-size="15" font-weight="700" fill="#242424" text-anchor="start">The test reads what the clause asks for</text>
+<text x="92" y="144" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">The setting itself, or the state of the devices or accounts,</text>
+<text x="92" y="162" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">within the scope the result names.</text>
+<text x="92" y="190" font-size="12" font-weight="700" fill="#605e5c" text-anchor="start">Example</text>
+<text x="150" y="190" font-size="12.5" font-weight="600" fill="#242424" text-anchor="start" font-family="Cascadia Code, SFMono-Regular, Menlo, monospace">3005 → 2.7.3</text>
+<text x="252.0" y="190" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="start">Reads the encryption state of each Windows device</text>
+<rect x="538.72" y="90" width="147.27999999999997" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="612.36" y="106" font-size="12" font-weight="600" fill="#0f6cbd" text-anchor="middle">Counts as coverage</text>
+<rect x="20" y="218" width="680" height="128" rx="8" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<rect x="38" y="256" width="8" height="14" rx="2" fill="#ffb900"/>
+<rect x="50" y="246" width="8" height="24" rx="2" fill="#ffb900"/>
+<rect x="62" y="236" width="8" height="34" rx="2" fill="#e1dfdd"/>
+<text x="92" y="242" font-size="11" font-weight="700" fill="#0f6cbd" text-anchor="start">PARTIAL</text>
+<text x="92" y="264" font-size="15" font-weight="700" fill="#242424" text-anchor="start">Evidence for part of the clause</text>
+<text x="92" y="284" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">A policy that is assigned, but not its effect; one of several</text>
+<text x="92" y="302" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">things the clause asks for; or the author's reading.</text>
+<text x="92" y="330" font-size="12" font-weight="700" fill="#605e5c" text-anchor="start">Example</text>
+<text x="150" y="330" font-size="12.5" font-weight="600" fill="#242424" text-anchor="start" font-family="Cascadia Code, SFMono-Regular, Menlo, monospace">3004 → 3.1.3 b)</text>
+<text x="274.5" y="330" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="start">Sees ASR policies assigned, not their effect on each device</text>
+<rect x="538.72" y="230" width="147.27999999999997" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="612.36" y="246" font-size="12" font-weight="600" fill="#0f6cbd" text-anchor="middle">Counts as coverage</text>
+<rect x="20" y="358" width="680" height="128" rx="8" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<rect x="38" y="396" width="8" height="14" rx="2" fill="#e1dfdd"/>
+<rect x="50" y="386" width="8" height="24" rx="2" fill="#e1dfdd"/>
+<rect x="62" y="376" width="8" height="34" rx="2" fill="#e1dfdd"/>
+<text x="92" y="382" font-size="11" font-weight="700" fill="#0f6cbd" text-anchor="start">INDICATOR</text>
+<text x="92" y="404" font-size="15" font-weight="700" fill="#242424" text-anchor="start">Points in a direction, proves no measure</text>
+<text x="92" y="424" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">The test has no Control and the tag NSM-Indikator.</text>
+<text x="92" y="442" font-size="13" font-weight="400" fill="#605e5c" text-anchor="start">Shown in the report, never counted.</text>
+<text x="92" y="470" font-size="12" font-weight="700" fill="#605e5c" text-anchor="start">Example</text>
+<text x="150" y="470" font-size="12.5" font-weight="600" fill="#242424" text-anchor="start" font-family="Cascadia Code, SFMono-Regular, Menlo, monospace">1010 → (2.6.7)</text>
+<text x="267.0" y="470" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="start">Open Entra recommendations with high priority</text>
+<rect x="587.44" y="370" width="98.55999999999999" height="24" rx="12" fill="#ebf3fc" stroke="#605e5c"/>
+<text x="636.72" y="386" font-size="12" font-weight="600" fill="#605e5c" text-anchor="middle">Not counted</text>
+<rect x="20" y="502" width="680" height="70" rx="8" fill="#fff8e6" stroke="#ffb900" stroke-width="1.5"/>
+<text x="36" y="526" font-size="14" font-weight="700" fill="#242424" text-anchor="start">Every result also says what it holds for</text>
+<text x="36" y="546" font-size="12.5" font-weight="400" fill="#424242" text-anchor="start">The second line, Gjelder: &lt;scope>, names what the test read, such as "Windows-klienter i Intune".</text>
+<text x="36" y="564" font-size="12.5" font-weight="400" fill="#424242" text-anchor="start">A direct link within that scope says nothing about servers, network equipment or processes.</text>
+</svg>

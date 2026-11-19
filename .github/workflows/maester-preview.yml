@@ -1,0 +1,45 @@
+name: Maester preview
+
+# Once a week, checks the pack against the newest Maester 3 preview, so a change in Maester shows up before a user
+# reports it. It never blocks a pull request: Validate stays pinned to the tested version. A failure here means
+# "look at the new Maester release", not "the pack is broken".
+on:
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  newest-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Pinned to a commit, not a tag: a moved tag cannot change what runs. v7.0.1.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Newest Maester preview
+        shell: pwsh
+        run: |
+          Install-PSResource -Name Maester -Prerelease -Scope CurrentUser -TrustRepository
+          Install-PSResource -Name Pester -Version 5.7.1 -Scope CurrentUser -TrustRepository
+          $m = Get-Module -ListAvailable Maester | Sort-Object Version -Descending | Select-Object -First 1
+          Import-Module $m.Path
+          "Maester $($m.Version) $($m.PrivateData.PSData.Prerelease)" >> $env:GITHUB_STEP_SUMMARY
+
+          $r = Test-MtPack -Path ./nsm-gp-ikt
+          $r | Format-List Id, Version, IsValid, Risk, Errors, Warnings, Findings
+          if (-not $r.IsValid -or $r.Risk -ne 'Low') { throw 'Test-MtPack did not pass on the newest preview.' }
+
+          $results = @(Invoke-MtTest -Path ./nsm-gp-ikt -WarningAction SilentlyContinue)
+          $broken = @($results | Where-Object ReasonCode -In 'InvalidMetadata', 'InvalidReturn', 'InvalidConfiguration', 'InvalidInstanceId', 'LoadFailed')
+          if ($broken) { throw "The newest preview could not run $($broken.Count) test(s): $($broken.Id -join ', ')" }
+
+          Import-Module Pester -RequiredVersion 5.7.1
+          $c = New-PesterConfiguration
+          $c.Run.Path = './unit-tests'
+          $c.Run.Exit = $true
+          Invoke-Pester -Configuration $c

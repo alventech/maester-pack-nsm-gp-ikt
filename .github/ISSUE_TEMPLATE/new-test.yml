@@ -1,0 +1,21 @@
+name: New test
+description: Propose a test for an NSM measure the pack does not measure yet.
+labels: [new-test]
+body:
+  - type: input
+    id: measure
+    attributes:
+      label: NSM measure (GP-IKT 2.1 number, or V1 to V7)
+      placeholder: "2.3.6"
+    validations:
+      required: true
+  - type: textarea
+    id: reading
+    attributes:
+      label: What a tenant would show, and where it is read (Graph endpoint, permission, licence)
+    validations:
+      required: true
+  - type: textarea
+    id: levels
+    attributes:
+      label: Proposed høy, moderat and liten grad

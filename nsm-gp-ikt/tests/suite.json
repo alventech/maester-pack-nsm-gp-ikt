@@ -1,0 +1,8 @@
+{
+  "Id": "NSM.NsmGpIkt",
+  "Name": "NSM grunnprinsipper for IKT-sikkerhet 2.1",
+  "Frameworks": [
+    { "Key": "nsm-gp-ikt", "Version": "2.1" },
+    { "Key": "nsm-varsel-2026", "Version": "2026-10-27" }
+  ]
+}

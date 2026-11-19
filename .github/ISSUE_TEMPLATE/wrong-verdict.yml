@@ -1,0 +1,54 @@
+name: Wrong verdict / feil vurdering
+description: A test gives a level (høy, moderat, liten grad) you think is wrong for your tenant.
+labels: [verdict]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste reports, screenshots, tenant IDs, domains or names from your tenant. Describe the setup instead.
+  - type: input
+    id: test
+    attributes:
+      label: Test ID
+      placeholder: MP.NSM.1004
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Kind of tenant (docs/verification.md; never its name, domain or IDs)
+      options:
+        - 1 Mature (E5, P2, Defender, hybrid AD)
+        - 2 Business Premium or E3
+        - 3 Cloud-only
+        - 4 App-only run
+        - 5 Default Connect-Maester scopes
+        - 6 Large (10 000+ users or devices)
+        - 7 Co-managed devices or Windows LTSC
+        - 8 Empty trial tenant
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Pack and Maester version
+      placeholder: pack 0.3.0, Maester 3.0.0
+  - type: textarea
+    id: result
+    attributes:
+      label: The level the test gave, and its result text (without names)
+    validations:
+      required: true
+  - type: textarea
+    id: portal
+    attributes:
+      label: What the portal shows
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: The level you think is right, and why (NSM's text, Microsoft's documentation)
+    validations:
+      required: true

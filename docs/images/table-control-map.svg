@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1812" width="720" height="1812" font-family="Segoe UI, system-ui, -apple-system, sans-serif">
+<rect x="2" y="1" width="716" height="156" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="17" width="30" height="30" viewBox="0 0 18.0 18.0"><path d="m3.802,14.032c.388.242,1.033.511,1.715.511.621,0,1.198-.18,1.676-.487,0,0,.001,0,.002-.001l1.805-1.128v4.073c-.286,0-.574-.078-.824-.234l-4.374-2.734Z" fill="#225086"/>
+  <path d="m7.853,1.507L.353,9.967c-.579.654-.428,1.642.323,2.111,0,0,2.776,1.735,3.126,1.954.388.242,1.033.511,1.715.511.621,0,1.198-.18,1.676-.487,0,0,.001,0,.002-.001l1.805-1.128-4.364-2.728,4.365-4.924V1s0,0,0,0c-.424,0-.847.169-1.147.507Z" fill="#6df"/>
+  <polygon points="4.636 10.199 4.688 10.231 9 12.927 9.001 12.927 9.001 12.927 9.001 5.276 9 5.275 4.636 10.199" fill="#cbf8ff"/>
+  <path d="m17.324,12.078c.751-.469.902-1.457.323-2.111l-4.921-5.551c-.397-.185-.842-.291-1.313-.291-.925,0-1.752.399-2.302,1.026l-.109.123h0s4.364,4.924,4.364,4.924h0s0,0,0,0l-4.365,2.728v4.073c.287,0,.573-.078.823-.234l7.5-4.688Z" fill="#074793"/>
+  <path d="m9.001,1v4.275s.109-.123.109-.123c.55-.627,1.377-1.026,2.302-1.026.472,0,.916.107,1.313.291l-2.579-2.909c-.299-.338-.723-.507-1.146-.507Z" fill="#0294e4"/>
+  <polygon points="13.365 10.199 13.365 10.199 13.365 10.199 9.001 5.276 9.001 12.926 13.365 10.199" fill="#96bcc2"/></svg>
+<text x="60" y="38" font-size="15" font-weight="700" fill="#242424">2.6 Control identities and access rights</text>
+<rect x="18" y="53" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="69" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.6.4</text>
+<rect x="82.0" y="53" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="69" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.6.5</text>
+<rect x="146.0" y="53" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="175.0" y="69" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.6.7</text>
+<rect x="210.0" y="53" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="228.2" y="69" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V1</text>
+<text x="18" y="97" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="117" font-size="13" fill="#242424">Phishing-resistant MFA, Conditional Access, PIM with</text>
+<text x="18" y="135" font-size="13" fill="#242424">approval, Windows LAPS, AD tiering</text>
+<text x="406.8888888888889" y="97" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="103" width="130.0" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="471.8888888888889" y="119" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Graph (Maester)</text>
+<rect x="542.8888888888889" y="103" width="36.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="561.088888888889" y="119" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">OT</text>
+<rect x="2" y="169" width="716" height="174" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="185" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="security-baselines-abf6a700-8f89-4d29-9777-d6ea9f96825e" x1="11.08" y1="13.63" x2="3.17" y2="-0.04" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.26" stop-color="#70a828" /><stop offset="0.79" stop-color="#9fd732" /><stop offset="1" stop-color="#b4ec36" /></linearGradient></defs><path d="M12.38,7.12c0,3.81-4.7,6.88-5.72,7.5a.35.35,0,0,1-.39,0C5.25,14,.56,10.93.56,7.12V2.53a.37.37,0,0,1,.36-.36C4.57,2.07,3.73.5,6.47.5S8.36,2.07,12,2.17a.38.38,0,0,1,.37.36Z" fill="#86d633" /><path d="M11.89,7.16c0,3.5-4.31,6.31-5.24,6.88a.33.33,0,0,1-.36,0c-.94-.57-5.24-3.38-5.24-6.88V3a.33.33,0,0,1,.33-.33C4.73,2.53,4,1.09,6.47,1.09s1.74,1.44,5.08,1.53a.34.34,0,0,1,.34.33Z" fill="url(#security-baselines-abf6a700-8f89-4d29-9777-d6ea9f96825e)" /><path d="M6.29,8.65H17.07a.35.35,0,0,1,.37.33v8.19a.35.35,0,0,1-.37.33H6.29a.36.36,0,0,1-.37-.33V9A.36.36,0,0,1,6.29,8.65Z" fill="#9cebff" /><path d="M6.27,8.65H17.09a.33.33,0,0,1,.35.31h0V10.2H5.92V9a.33.33,0,0,1,.35-.31Z" fill="#0078d4" /><path d="M15.87,13.41H8.76c-.16,0-.28.08-.28.16V14c0,.09.12.16.28.16h7.11c.16,0,.29-.07.29-.16v-.4C16.16,13.49,16,13.41,15.87,13.41Z" fill="#0078d4" /><path d="M15.87,11.61H8.76c-.16,0-.28.07-.28.16v.39c0,.09.12.16.28.16h7.11c.16,0,.29-.07.29-.16v-.39C16.16,11.68,16,11.61,15.87,11.61Z" fill="#0078d4" /><path d="M15.87,15.44H8.76c-.16,0-.28.07-.28.16V16c0,.09.12.16.28.16h7.11c.16,0,.29-.07.29-.16v-.4C16.16,15.51,16,15.44,15.87,15.44Z" fill="#0078d4" /><circle cx="7.3" cy="11.96" r="0.47" fill="#0078d4" /><circle cx="7.3" cy="13.77" r="0.47" fill="#0078d4" /><circle cx="7.3" cy="15.8" r="0.47" fill="#0078d4" /></svg>
+<text x="60" y="206" font-size="15" font-weight="700" fill="#242424">2.3 Maintain a secure configuration</text>
+<rect x="18" y="221" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="237" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.3.1</text>
+<rect x="82.0" y="221" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="237" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.3.2</text>
+<rect x="146.0" y="221" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="175.0" y="237" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.3.3</text>
+<rect x="210.0" y="221" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="239.0" y="237" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.3.7</text>
+<text x="18" y="265" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="285" font-size="13" fill="#242424">Windows Autopatch, Azure Update Manager, App Control</text>
+<text x="18" y="303" font-size="13" fill="#242424">for Business, security baselines and ASR, legacy</text>
+<text x="18" y="321" font-size="13" fill="#242424">authentication off</text>
+<text x="406.8888888888889" y="265" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="271" width="130.0" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="471.8888888888889" y="287" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Graph (Maester)</text>
+<rect x="542.8888888888889" y="271" width="108.39999999999999" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="597.088888888889" y="287" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Azure Policy</text>
+<rect x="406.8888888888889" y="301" width="72.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="443.0888888888889" y="317" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Network</text>
+<rect x="485.2888888888889" y="301" width="36.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="503.4888888888889" y="317" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">OT</text>
+<rect x="2" y="355" width="716" height="174" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="371" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="software-updates-b7830ebc-973a-42a1-a635-f5891080c376" x1="9" y1="15.84" x2="9" y2="0.52" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d2ebff" /><stop offset="1" stop-color="#f0fffd" /></linearGradient></defs><rect y="1.13" width="18" height="12.81" rx="0.6" fill="#0078d4" /><rect x="1.05" y="2.03" width="15.91" height="10.9" rx="0.33" opacity="0.9" fill="url(#software-updates-b7830ebc-973a-42a1-a635-f5891080c376)" /><rect x="8.07" y="1.53" width="1.91" height="0.26" rx="0.12" fill="#f2f2f2" /><circle cx="12.87" cy="12.65" r="4.22" fill="#76bc2d" /><path d="M10.35,12A2.76,2.76,0,0,0,10.27,13a2.65,2.65,0,0,0,.36,1,2.53,2.53,0,0,0,.48.6,2.92,2.92,0,0,0,.61.43,3.61,3.61,0,0,0,.72.25,2.75,2.75,0,0,0,.76,0l-.07-.73a.14.14,0,0,0-.14-.14l-.39,0a2,2,0,0,1-.48-.17A2.42,2.42,0,0,1,11.7,14a1.52,1.52,0,0,1-.32-.4,1.69,1.69,0,0,1-.24-.67,1.88,1.88,0,0,1,0-.71l.25.42a.15.15,0,0,0,.2.05l.31-.18a.15.15,0,0,0,.05-.2l-.84-1.42a.16.16,0,0,0-.21-.05l-1.41.84a.14.14,0,0,0,0,.2l.17.3a.15.15,0,0,0,.21.06Z" fill="#fff" /><path d="M13.3,10.88a2.48,2.48,0,0,1,.48.17,2,2,0,0,1,.42.3,1.6,1.6,0,0,1,.33.4,1.78,1.78,0,0,1,.23.67,1.89,1.89,0,0,1,0,.71l-.25-.42a.15.15,0,0,0-.2-.06l-.3.18a.15.15,0,0,0-.05.21l.83,1.41a.16.16,0,0,0,.21.06l1.41-.84a.15.15,0,0,0,.06-.21l-.18-.3a.16.16,0,0,0-.21-.05l-.49.29a2.62,2.62,0,0,0,.08-1.08,2.88,2.88,0,0,0-.35-1,3.09,3.09,0,0,0-.48-.59A2.79,2.79,0,0,0,13.46,10a2.47,2.47,0,0,0-.61,0,.14.14,0,0,0-.13.16l0,.58a.15.15,0,0,0,.14.13A2.56,2.56,0,0,1,13.3,10.88Z" fill="#fff" /></svg>
+<text x="60" y="392" font-size="15" font-weight="700" fill="#242424">2.1 Include security during procurement and development processes</text>
+<rect x="18" y="407" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="423" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.1.2</text>
+<rect x="82.0" y="407" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="423" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.1.9</text>
+<text x="18" y="451" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="471" font-size="13" fill="#242424">Supported Microsoft 365 Apps channel, Defender</text>
+<text x="18" y="489" font-size="13" fill="#242424">Vulnerability Management, access reviews for guests</text>
+<text x="18" y="507" font-size="13" fill="#242424">and suppliers</text>
+<text x="406.8888888888889" y="451" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="457" width="58.0" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="435.8888888888889" y="473" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Graph</text>
+<rect x="470.8888888888889" y="457" width="79.6" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="510.6888888888889" y="473" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Defender</text>
+<rect x="556.4888888888889" y="457" width="86.8" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="599.8888888888889" y="473" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Contracts</text>
+<rect x="2" y="541" width="716" height="174" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="557" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="resource-graph-aaf70b12-8383-43d3-8674-d08878f903d1" x1="2.63" y1="5.99" x2="2.63" y2="1.75" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#773adc" /><stop offset="1" stop-color="#b77af4" /></linearGradient><linearGradient id="resource-graph-ac810344-4e2d-4dad-99ba-9567b44e7523" x1="14.76" y1="6.31" x2="14.76" y2="0.85" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#773adc" /><stop offset="1" stop-color="#b77af4" /></linearGradient><linearGradient id="resource-graph-b4b36432-ae36-466e-9abd-a30eb14585d3" x1="11.92" y1="17.27" x2="11.92" y2="7.71" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#773adc" /><stop offset="1" stop-color="#b77af4" /></linearGradient></defs><path d="M11.56,14.24,1.79,4.35A.77.77,0,0,1,2.34,3H14.76V4.58H4.19l8.47,8.58Z" fill="#b796f9" /><ellipse cx="2.63" cy="3.87" rx="2.13" ry="2.12" fill="url(#resource-graph-aaf70b12-8383-43d3-8674-d08878f903d1)" /><ellipse cx="14.76" cy="3.58" rx="2.74" ry="2.73" fill="url(#resource-graph-ac810344-4e2d-4dad-99ba-9567b44e7523)" /><ellipse cx="11.92" cy="13.69" rx="3.47" ry="3.46" fill="url(#resource-graph-b4b36432-ae36-466e-9abd-a30eb14585d3)" /></svg>
+<text x="60" y="578" font-size="15" font-weight="700" fill="#242424">1.2 Identify devices and software</text>
+<rect x="18" y="593" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="609" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">1.2.3</text>
+<rect x="82.0" y="593" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="609" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">1.2.4</text>
+<rect x="146.0" y="593" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="164.2" y="609" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V6</text>
+<text x="18" y="637" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="657" font-size="13" fill="#242424">Defender for Endpoint device discovery, Azure Arc and</text>
+<text x="18" y="675" font-size="13" fill="#242424">Resource Graph, software inventory with CPE, Defender</text>
+<text x="18" y="693" font-size="13" fill="#242424">for IoT</text>
+<text x="406.8888888888889" y="637" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="643" width="79.6" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="446.6888888888889" y="659" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Defender</text>
+<rect x="492.48888888888894" y="643" width="122.8" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="553.8888888888889" y="659" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Resource Graph</text>
+<rect x="2" y="727" width="716" height="174" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="743" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="firewall-b012de7b-7a0e-4618-9fec-703622e3e8c3" x1="9" y1="14.14" x2="9" y2="1.38" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.82" stop-color="#5ea0ef" /></linearGradient></defs><path d="M18,10.14a4.06,4.06,0,0,0-3.51-3.89A5.1,5.1,0,0,0,9.24,1.38a5.23,5.23,0,0,0-5,3.41A4.82,4.82,0,0,0,0,9.43a4.9,4.9,0,0,0,5.07,4.71l.44,0h8.21a1.46,1.46,0,0,0,.22,0A4.1,4.1,0,0,0,18,10.14Z" fill="url(#firewall-b012de7b-7a0e-4618-9fec-703622e3e8c3)" /><path d="M14.29,11.19a.42.42,0,0,0-.42-.41H4.13a.42.42,0,0,0-.42.41v5a.42.42,0,0,0,.42.41h9.74a.42.42,0,0,0,.42-.41v-5Z" fill="#821010" /><rect x="4.3" y="11.36" width="2.87" height="1.27" fill="#e62323" /><rect x="7.6" y="11.36" width="2.87" height="1.27" fill="#ff7381" /><rect x="10.9" y="11.36" width="2.87" height="1.27" fill="#e62323" /><rect x="4.3" y="13.06" width="1.19" height="1.27" fill="#e62323" /><rect x="12.58" y="13.06" width="1.19" height="1.27" fill="#ff7381" /><rect x="5.92" y="13.06" width="2.87" height="1.27" fill="#ff7381" /><rect x="9.23" y="13.06" width="2.87" height="1.27" fill="#e62323" /><rect x="4.3" y="14.76" width="2.87" height="1.27" fill="#e62323" /><rect x="7.6" y="14.76" width="2.87" height="1.27" fill="#ff7381" /><rect x="10.9" y="14.76" width="2.87" height="1.27" fill="#e62323" /></svg>
+<text x="60" y="764" font-size="15" font-weight="700" fill="#242424">2.2, 2.4, 2.5 Secure architecture, networks and data flow</text>
+<rect x="18" y="779" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="795" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.2.3</text>
+<rect x="82.0" y="779" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="795" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.4.1</text>
+<rect x="146.0" y="779" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="175.0" y="795" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.5.1</text>
+<rect x="210.0" y="779" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="228.2" y="795" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V2</text>
+<text x="18" y="823" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="843" font-size="13" fill="#242424">Landing zones, Azure Firewall and NSGs, on-prem</text>
+<text x="18" y="861" font-size="13" fill="#242424">segmentation, 802.1X, IEC 62443 zones for OT</text>
+<text x="406.8888888888889" y="823" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="829" width="108.39999999999999" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="461.0888888888889" y="845" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Azure Policy</text>
+<rect x="521.2888888888889" y="829" width="72.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="557.4888888888889" y="845" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">On-prem</text>
+<rect x="599.6888888888889" y="829" width="72.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="635.8888888888889" y="845" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Network</text>
+<rect x="406.8888888888889" y="859" width="36.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="425.0888888888889" y="875" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">OT</text>
+<rect x="2" y="913" width="716" height="174" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="929" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="backup-e3a1929f-235e-4bf0-912e-e32ec472d9ca" x1="11.462" y1="10.536" x2="11.462" y2="1.423" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.149" stop-color="#1882db" /><stop offset="0.373" stop-color="#378fe4" /><stop offset="0.594" stop-color="#4c99ea" /><stop offset="0.806" stop-color="#5a9eee" /><stop offset="1" stop-color="#5ea0ef" /></linearGradient><linearGradient id="backup-a58ac033-126d-45f0-b916-25fd6d357741" x1="6.484" y1="16.577" x2="6.484" y2="7.461" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32bedd" /><stop offset="1" stop-color="#50e6ff" /></linearGradient></defs><g id="backup-bca2981c-4161-411d-8c69-c657beb9ef65"><g><path d="M17.891,7.681a2.889,2.889,0,0,0-2.508-2.776,3.641,3.641,0,0,0-3.75-3.482,3.735,3.735,0,0,0-3.57,2.434,3.447,3.447,0,0,0-3.03,3.317,3.5,3.5,0,0,0,3.62,3.362c.108,0,.214,0,.319-.014h5.863a.611.611,0,0,0,.155-.023A2.923,2.923,0,0,0,17.891,7.681Z" fill="url(#backup-e3a1929f-235e-4bf0-912e-e32ec472d9ca)" /><path d="M9.835,11l.018.414.41.055a2.371,2.371,0,0,1,2.058,2.3,2.409,2.409,0,0,1-2.384,2.379h-6.3A2.976,2.976,0,0,1,.56,13.262a2.919,2.919,0,0,1,2.571-2.8l.3-.037.1-.285A3.216,3.216,0,0,1,6.609,8.021h.022A3.116,3.116,0,0,1,9.835,11Z" fill="#fff" /><path d="M13.6,5.66,12.013,4.122c-.173-.173-.319-.112-.319.156v.691a.194.194,0,0,1-.016.075.183.183,0,0,1-.108.1.194.194,0,0,1-.075.012c-1.02,0-3.864.268-3.967,4.157a.2.2,0,0,0,.2.2H8.738a.2.2,0,0,0,.08-.017.208.208,0,0,0,.067-.047.222.222,0,0,0,.042-.071.2.2,0,0,0,.01-.081,2.386,2.386,0,0,1,2.592-2.878.2.2,0,0,1,.2.2v.639c0,.32.1.372.32.156L13.6,5.989a.193.193,0,0,0,.064-.072.2.2,0,0,0,0-.185A.2.2,0,0,0,13.6,5.66Z" fill="#fff" /><path d="M3.578,16.577A3.469,3.469,0,0,1,.11,13.213v-.031A3.417,3.417,0,0,1,3.116,9.9a3.713,3.713,0,0,1,3.545-2.44,3.608,3.608,0,0,1,3.712,3.452h0a2.865,2.865,0,0,1,2.486,2.775v.017a2.9,2.9,0,0,1-2.874,2.868H3.7C3.659,16.577,3.618,16.577,3.578,16.577ZM1.1,13.2a2.483,2.483,0,0,0,2.567,2.389H9.98A1.914,1.914,0,0,0,11.87,13.7,1.876,1.876,0,0,0,10.242,11.9l-.822-.11-.035-.828A2.622,2.622,0,0,0,6.69,8.451H6.658a2.72,2.72,0,0,0-2.613,1.79l-.208.571-.6.072A2.425,2.425,0,0,0,1.1,13.2Z" fill="url(#backup-a58ac033-126d-45f0-b916-25fd6d357741)" /></g></g></svg>
+<text x="60" y="950" font-size="15" font-weight="700" fill="#242424">2.9 Establish capability to restore data</text>
+<rect x="18" y="965" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="981" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.9.1</text>
+<rect x="82.0" y="965" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="981" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.9.3</text>
+<text x="18" y="1009" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="1029" font-size="13" fill="#242424">Azure Backup with immutable vaults, Microsoft 365</text>
+<text x="18" y="1047" font-size="13" fill="#242424">Backup, OneDrive known folder move, documented</text>
+<text x="18" y="1065" font-size="13" fill="#242424">restore tests</text>
+<text x="406.8888888888889" y="1009" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="1015" width="108.39999999999999" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="461.0888888888889" y="1031" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Azure Policy</text>
+<rect x="521.2888888888889" y="1015" width="58.0" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="550.2888888888889" y="1031" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Graph</text>
+<rect x="585.2888888888889" y="1015" width="115.6" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="643.0888888888888" y="1031" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Restore tests</text>
+<rect x="2" y="1099" width="716" height="156" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="1115" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="sentinel-aff60ddf-eec1-40bf-8bf5-f3e3b50e8818" x1="9" y1="16.21" x2="9" y2="0.62" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1b93eb" /><stop offset="0.21" stop-color="#2095eb" /><stop offset="0.44" stop-color="#2e9ced" /><stop offset="0.69" stop-color="#45a7ef" /><stop offset="0.95" stop-color="#64b6f1" /><stop offset="1" stop-color="#6bb9f2" /></linearGradient></defs><path d="M16,8.44c0,4.57-5.53,8.25-6.73,9a.43.43,0,0,1-.46,0C7.57,16.69,2,13,2,8.44V2.94a.44.44,0,0,1,.43-.44C6.77,2.39,5.78.5,9,.5s2.23,1.89,6.53,2a.44.44,0,0,1,.43.44Z" fill="#1b93eb" /><path d="M15.38,8.48c0,4.2-5.07,7.57-6.17,8.25a.4.4,0,0,1-.42,0c-1.1-.68-6.17-4.05-6.17-8.25v-5A.41.41,0,0,1,3,3c3.94-.11,3-1.83,6-1.83S11.05,2.93,15,3a.41.41,0,0,1,.39.4Z" fill="url(#sentinel-aff60ddf-eec1-40bf-8bf5-f3e3b50e8818)" /><path d="M9,6.53A2.88,2.88,0,0,1,11.84,9a.49.49,0,0,0,.49.4h1.4a.49.49,0,0,0,.5-.53,5.26,5.26,0,0,0-10.46,0,.49.49,0,0,0,.5.53h1.4A.49.49,0,0,0,6.16,9,2.88,2.88,0,0,1,9,6.53Z" fill="#c3f1ff" /><circle cx="9" cy="9.4" r="1.91" fill="#fff" /></svg>
+<text x="60" y="1136" font-size="15" font-weight="700" fill="#242424">3.2 Establish security monitoring</text>
+<rect x="18" y="1151" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="1167" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">3.2.3</text>
+<rect x="82.0" y="1151" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="1167" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">3.2.4</text>
+<text x="18" y="1195" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="1215" font-size="13" fill="#242424">Log source plan, Microsoft Sentinel and Defender XDR</text>
+<text x="18" y="1233" font-size="13" fill="#242424">data connectors</text>
+<text x="406.8888888888889" y="1195" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="1201" width="79.6" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="446.6888888888889" y="1217" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Sentinel</text>
+<rect x="492.48888888888894" y="1201" width="130.0" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="557.4888888888889" y="1217" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Log source plan</text>
+<rect x="2" y="1267" width="716" height="156" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="1283" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="change-bcef103b-843d-4013-b1c2-e8a2aae470a0" x1="-28.849" y1="86.754" x2="-28.849" y2="90.154" gradientTransform="matrix(0.996, 0.094, 0.094, -0.996, 27.113, 101.637)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.82" stop-color="#86d633" /></linearGradient><linearGradient id="change-ea571810-8d90-40aa-999d-651c193a1569" x1="7.82" y1="16.227" x2="7.82" y2="19.627" gradientTransform="matrix(1, 0.011, 0.011, -1, 3.112, 33.079)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.82" stop-color="#86d633" /></linearGradient><linearGradient id="change-fa592d4d-7ce2-44f1-a7bf-5d222d3b4636" x1="-20.227" y1="87.696" x2="-20.227" y2="91.096" gradientTransform="matrix(0.997, 0.091, 0.091, -0.997, 27.793, 101.286)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.82" stop-color="#86d633" /></linearGradient><linearGradient id="change-e1fa3ab3-0d79-400b-9c04-fd67eb2c16ce" x1="-33.251" y1="80.916" x2="-33.251" y2="84.316" gradientTransform="matrix(0.997, 0.091, 0.091, -0.997, 27.799, 101.286)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.82" stop-color="#86d633" /></linearGradient></defs><polygon points="2.59 16.55 1.53 15.61 6.71 9.81 11.12 14.35 15.28 9.94 16.31 10.91 11.13 16.4 6.76 11.88 2.59 16.55" fill="#76bc2d" /><circle cx="6.732" cy="10.857" r="1.7" fill="url(#change-bcef103b-843d-4013-b1c2-e8a2aae470a0)" /><circle cx="11.122" cy="15.236" r="1.7" fill="url(#change-ea571810-8d90-40aa-999d-651c193a1569)" /><circle cx="15.799" cy="10.277" r="1.7" fill="url(#change-fa592d4d-7ce2-44f1-a7bf-5d222d3b4636)" /><circle cx="2.203" cy="15.8" r="1.7" fill="url(#change-e1fa3ab3-0d79-400b-9c04-fd67eb2c16ce)" /><path d="M14.18,8.308,11,11.529,7.791,8.308a4.45,4.45,0,0,1-.086-6.293c.028-.029.057-.057.086-.085a4.47,4.47,0,0,1,6.323-.066l.066.066a4.471,4.471,0,0,1,.055,6.323Z" fill="#0078d4" fill-rule="evenodd" /><path d="M8.26,4.233a2.878,2.878,0,0,0,.291,2.241,2.778,2.778,0,0,0,.522.636,2.919,2.919,0,0,0,.656.469,3.306,3.306,0,0,0,.761.26,2.7,2.7,0,0,0,.823,0l-.072-.781a.167.167,0,0,0-.157-.146,1.938,1.938,0,0,1-.417,0,2.3,2.3,0,0,1-.51-.177,1.944,1.944,0,0,1-.449-.313,1.826,1.826,0,0,1-.354-.438,1.742,1.742,0,0,1-.25-.709,2.055,2.055,0,0,1,0-.75l.271.448a.166.166,0,0,0,.219,0l.365-.094a.167.167,0,0,0,.052-.219l-.9-1.469a.165.165,0,0,0-.2-.1l-1.521.9a.166.166,0,0,0,0,.219l.187.323a.167.167,0,0,0,.219.062Z" fill="#fff" /><path d="M11.418,3.118a1.746,1.746,0,0,1,.51.177,1.883,1.883,0,0,1,.8.74,1.865,1.865,0,0,1,.25.719,2.071,2.071,0,0,1,0,.761l-.26-.448A.167.167,0,0,0,12.5,5l-.323.2a.157.157,0,0,0-.068.211l0,.008.907,1.512a.157.157,0,0,0,.21.067l.009,0,1.511-.907a.156.156,0,0,0,0-.219l-.188-.323a.168.168,0,0,0-.219,0l-.521.313A2.824,2.824,0,0,0,13.9,4.713a2.686,2.686,0,0,0-.375-1.1,2.773,2.773,0,0,0-.511-.646,3.254,3.254,0,0,0-.667-.459,2.752,2.752,0,0,0-.761-.26,2.766,2.766,0,0,0-.646-.1.166.166,0,0,0-.146.177v.615a.168.168,0,0,0,.157.146A1.8,1.8,0,0,1,11.418,3.118Z" fill="#fff" /></svg>
+<text x="60" y="1304" font-size="15" font-weight="700" fill="#242424">4.1 Prepare the organisation for incidents</text>
+<rect x="18" y="1319" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="1335" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">4.1.1</text>
+<rect x="82.0" y="1319" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="100.2" y="1335" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V3</text>
+<text x="18" y="1363" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="1383" font-size="13" fill="#242424">Contingency plan, minimum maintainable system,</text>
+<text x="18" y="1401" font-size="13" fill="#242424">exercise with management</text>
+<text x="406.8888888888889" y="1363" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="1369" width="158.79999999999998" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="486.2888888888889" y="1385" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Plans and exercises</text>
+<rect x="2" y="1435" width="716" height="174" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="1451" width="30" height="30" viewBox="0 0 18.0 18.0"><defs><linearGradient id="roles-e78519cd-36d2-4ee5-987f-be84be24d95e" x1="7.93" y1="17.95" x2="7.93" y2="5.62" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="1" stop-color="#b4ec36" /></linearGradient><linearGradient id="roles-ac3f95ec-6391-4f34-b431-9534d4cdf013" x1="7.95" y1="9.21" x2="7.95" y2="-2.02" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="1" stop-color="#b4ec36" /></linearGradient></defs><path d="M14,16.85a1.3,1.3,0,0,0,1.32-1.31.81.81,0,0,0,0-.16c-.52-4.15-2.88-7.53-7.4-7.53S1,10.71.51,15.39A1.34,1.34,0,0,0,1.7,16.85H14Z" fill="url(#roles-e78519cd-36d2-4ee5-987f-be84be24d95e)" /><path d="M8,8.83a4.16,4.16,0,0,1-2.26-.66L7.92,14l2.22-5.79A4.2,4.2,0,0,1,8,8.83Z" fill="#fff" /><circle cx="7.95" cy="4.67" r="4.17" fill="url(#roles-ac3f95ec-6391-4f34-b431-9534d4cdf013)" /><polygon points="17.49 11.13 17.49 15.37 13.85 17.5 13.85 13.26 17.49 11.13" fill="#32bedd" /><polygon points="17.49 11.13 13.85 13.26 10.21 11.13 13.85 9 17.49 11.13" fill="#9cebff" /><polygon points="13.85 13.26 13.85 17.5 10.21 15.37 10.21 11.13 13.85 13.26" fill="#50e6ff" /><polygon points="10.21 15.37 13.85 13.26 13.85 17.5 10.21 15.37" fill="#9cebff" /><polygon points="17.49 15.37 13.85 13.26 13.85 17.5 17.49 15.37" fill="#50e6ff" /></svg>
+<text x="60" y="1472" font-size="15" font-weight="700" fill="#242424">Governance and supply chain</text>
+<rect x="18" y="1487" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="47.0" y="1503" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">1.3.3</text>
+<rect x="82.0" y="1487" width="58.0" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="111.0" y="1503" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">2.2.1</text>
+<rect x="146.0" y="1487" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="164.2" y="1503" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V4</text>
+<rect x="188.4" y="1487" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="206.6" y="1503" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V5</text>
+<text x="18" y="1531" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="1551" font-size="13" fill="#242424">Security RACI, target security architecture, supplier</text>
+<text x="18" y="1569" font-size="13" fill="#242424">requirements, Defender for Cloud Apps</text>
+<text x="406.8888888888889" y="1531" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="1537" width="187.6" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="500.6888888888889" y="1553" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Defender for Cloud Apps</text>
+<rect x="600.4888888888889" y="1537" width="50.8" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="625.8888888888889" y="1553" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">RACI</text>
+<rect x="406.8888888888889" y="1567" width="108.39999999999999" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="461.0888888888889" y="1583" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Architecture</text>
+<rect x="521.2888888888889" y="1567" width="86.8" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="564.6888888888889" y="1583" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Suppliers</text>
+<rect x="2" y="1621" width="716" height="144" rx="10" fill="#ffffff" stroke="#c8c6c4" stroke-width="1.5"/>
+<svg x="18" y="1637" width="30" height="30" viewBox="0 0 18.0 18.0"><g><path d="M15.149,2.271H2.851A1.608,1.608,0,0,0,1.514,4.75a21.829,21.829,0,0,1,1.4,3.123A2.019,2.019,0,0,0,4.766,9h8.467a2.02,2.02,0,0,0,1.849-1.127,21.829,21.829,0,0,1,1.4-3.123A1.608,1.608,0,0,0,15.149,2.271Zm.434,1.919a22.611,22.611,0,0,0-1.5,3.322.7.7,0,0,1-.671.426H4.589a.7.7,0,0,1-.674-.432,22.575,22.575,0,0,0-1.5-3.316.584.584,0,0,1-.018-.6.489.489,0,0,1,.452-.261h12.3a.489.489,0,0,1,.452.261A.584.584,0,0,1,15.583,4.19Z" fill="#ff8c00" /><path d="M15.149,2.271H9.708V3.333h5.441a.487.487,0,0,1,.451.261.583.583,0,0,1-.017.6,22.611,22.611,0,0,0-1.5,3.322.7.7,0,0,1-.672.426h-3.7V9h3.525a2.02,2.02,0,0,0,1.849-1.127,21.829,21.829,0,0,1,1.4-3.123A1.608,1.608,0,0,0,15.149,2.271Z" fill="#dd5900" opacity="0.6" /><path d="M7.583,10.417h2.834v3.9H7.583Z" fill="#fcd116" /><path d="M9,10.417h1.417v3.9H9Z" fill="#dd5900" opacity="0.4" /><path d="M13.579,17.058l-.656-2.29c-.21-.489-.39-.81-.956-.81H6.033c-.566,0-.746.321-.956.81l-.656,2.29a.325.325,0,0,0,.321.442h8.516A.325.325,0,0,0,13.579,17.058Z" fill="#ff8c00" /><path d="M13.579,17.058l-.656-2.29c-.21-.489-.39-.81-.956-.81H9V17.5h4.258A.325.325,0,0,0,13.579,17.058Z" fill="#dd5900" opacity="0.6" /><path d="M7.583,11.442a2.772,2.772,0,0,0,2.834,0V10.417H7.583Z" fill="#dd5900" opacity="0.4" /><path d="M13.411.5H4.562c-.61,0-.577.7-.433.866S5.31,2.829,5.31,7.485a3.677,3.677,0,0,0,7.353,0c0-4.656,1-5.938,1.182-6.119A.53.53,0,0,0,13.411.5Z" fill="#fcd116" /><path d="M9,11.124a3.693,3.693,0,0,0,3.663-3.639c0-4.656,1-5.938,1.182-6.119A.53.53,0,0,0,13.411.5H9Z" fill="#dd5900" opacity="0.3" /></g></svg>
+<text x="60" y="1658" font-size="15" font-weight="700" fill="#242424">Verification</text>
+<rect x="18" y="1673" width="36.4" height="24" rx="12" fill="#f3f2f1" stroke="#d2d0ce"/>
+<text x="36.2" y="1689" font-size="12" font-weight="600" fill="#242424" text-anchor="middle">V7</text>
+<text x="18" y="1717" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">EXAMPLES OF CONTROLS</text>
+<text x="18" y="1737" font-size="13" fill="#242424">Phishing simulations, annual penetration test</text>
+<text x="406.8888888888889" y="1717" font-size="11" font-weight="700" fill="#0f6cbd" letter-spacing="0.5">HOW IT'S MEASURED</text>
+<rect x="406.8888888888889" y="1723" width="58.0" height="24" rx="12" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="435.8888888888889" y="1739" font-size="12" font-weight="400" fill="#0f6cbd" text-anchor="middle">Graph</text>
+<rect x="470.8888888888889" y="1723" width="72.4" height="24" rx="12" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="507.0888888888889" y="1739" font-size="12" font-weight="400" fill="#605e5c" text-anchor="middle">Pentest</text>
+<rect x="2" y="1782" width="34" height="18" rx="9" fill="#ebf3fc" stroke="#0f6cbd"/>
+<text x="44" y="1795" font-size="12.5" fill="#605e5c">Measured automatically</text>
+<rect x="213.75" y="1782" width="34" height="18" rx="9" fill="#ffffff" stroke="#8a8886" stroke-dasharray="4 3"/>
+<text x="255.75" y="1795" font-size="12.5" fill="#605e5c">Attested by an owner</text>
+</svg>

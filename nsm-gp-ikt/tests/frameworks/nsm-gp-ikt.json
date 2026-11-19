@@ -1,0 +1,835 @@
+{
+ "Framework": "nsm-gp-ikt",
+ "Name": "NSMs grunnprinsipper for IKT-sikkerhet",
+ "Version": "2.1",
+ "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/grunnprinsipper-for-ikt-sikkerhet/",
+ "Note": "Generated from Regneark med tiltak fra NSMs grunnprinsipper for IKT-sikkerhet.xlsx (GP-IKT 2.1 (regneark sist endret 2026-04)). Identifiers and facts only, no NSM text: read each measure on nsm.no through its Url. Priority is NSM's priority group (1 is most important).",
+ "Requirements": [
+  {
+   "Id": "1.1.1",
+   "Principle": "1.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-styringsstrukturer-leveranser-og-understottende-systemer/#:~:text=Identifiser%20virksomhetens%20strategi%20og%20prioriterte"
+  },
+  {
+   "Id": "1.1.2",
+   "Principle": "1.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-styringsstrukturer-leveranser-og-understottende-systemer/#:~:text=Identifiser%20virksomhetens%20strukturer%20og%20prosesser"
+  },
+  {
+   "Id": "1.1.3",
+   "Principle": "1.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-styringsstrukturer-leveranser-og-understottende-systemer/#:~:text=Identifiser%20virksomhetens%20prosesser%20for%20risikostyring"
+  },
+  {
+   "Id": "1.1.4",
+   "Principle": "1.1",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-styringsstrukturer-leveranser-og-understottende-systemer/#:~:text=Identifiser%20virksomhetens%20toleransegrenser%20for%20risiko"
+  },
+  {
+   "Id": "1.1.5",
+   "Principle": "1.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-styringsstrukturer-leveranser-og-understottende-systemer/#:~:text=Kartlegg%20virksomhetens%20leveranser%2C%20informasjonssystemer%20og"
+  },
+  {
+   "Id": "1.1.6",
+   "Principle": "1.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-styringsstrukturer-leveranser-og-understottende-systemer/#:~:text=Kartlegg%20informasjonsbehandling%20og%20dataflyt%20i"
+  },
+  {
+   "Id": "1.2.1",
+   "Principle": "1.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-enheter-og-programvare/#:~:text=Etabler%20en%20prosess%20for%20%C3%A5"
+  },
+  {
+   "Id": "1.2.2",
+   "Principle": "1.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-enheter-og-programvare/#:~:text=Fastsett%20retningslinjer%20for%20godkjente%20enheter"
+  },
+  {
+   "Id": "1.2.3",
+   "Principle": "1.2",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-enheter-og-programvare/#:~:text=Kartlegg%20enheter%20i%20bruk%20i"
+  },
+  {
+   "Id": "1.2.4",
+   "Principle": "1.2",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-enheter-og-programvare/#:~:text=Kartlegg%20programvare%20i%20bruk%20i"
+  },
+  {
+   "Id": "1.3.1",
+   "Principle": "1.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-brukere-og-behov-for-tilgang/#:~:text=Kartlegg%20brukere%20i%20informasjonssystemene%2C%20inkludert"
+  },
+  {
+   "Id": "1.3.2",
+   "Principle": "1.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-brukere-og-behov-for-tilgang/#:~:text=Kartlegg%20og%20definer%20de%20ulike"
+  },
+  {
+   "Id": "1.3.3",
+   "Principle": "1.3",
+   "Priority": 2,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/identifisere-og-kartlegge/kartlegg-brukere-og-behov-for-tilgang/#:~:text=Kartlegg%20ansvar%20og%20roller%20spesielt"
+  },
+  {
+   "Id": "2.1.1",
+   "Principle": "2.1",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Integrer%20sikkerhet%20i%20virksomhetens%20prosess"
+  },
+  {
+   "Id": "2.1.2",
+   "Principle": "2.1",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Kj%C3%B8p%20moderne%20og%20oppdatert%20maskin%2D"
+  },
+  {
+   "Id": "2.1.3",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Foretrekk%20IKT%2Dprodukter%20som%20er%20sertifiserte"
+  },
+  {
+   "Id": "2.1.4",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Reduser%20risiko%20for%20m%C3%A5lrettet%20manipulasjon"
+  },
+  {
+   "Id": "2.1.5",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Benytt%20en%20metode%20for%20sikker"
+  },
+  {
+   "Id": "2.1.6",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Benytt%20separate%20milj%C3%B8er%20for%20utvikling%2C"
+  },
+  {
+   "Id": "2.1.7",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Gjennomf%C3%B8r%20tilstrekkelig%20med%20testing%20gjennom"
+  },
+  {
+   "Id": "2.1.8",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Vedlikehold%20programvarekode%20som%20utvikles%2Fbenyttes%20i"
+  },
+  {
+   "Id": "2.1.9",
+   "Principle": "2.1",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Ta%20ansvar%20for%20virksomhetens%20sikkerhet"
+  },
+  {
+   "Id": "2.1.10",
+   "Principle": "2.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-sikkerhet-i-anskaffelses-og-utviklingsprosesser/#:~:text=Unders%C3%B8k%20sikkerheten%20hos%20tjenesteleverand%C3%B8r%20ved"
+  },
+  {
+   "Id": "2.2.1",
+   "Principle": "2.2",
+   "Priority": 2,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Etabler%20og%20vedlikehold%20en%20helhetlig"
+  },
+  {
+   "Id": "2.2.2",
+   "Principle": "2.2",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Bygg%20IKT%2Dsystemet%20med%20IKT%2Dprodukter%20som"
+  },
+  {
+   "Id": "2.2.3",
+   "Principle": "2.2",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Del%20opp%20virksomhetens%20nettverk%20etter"
+  },
+  {
+   "Id": "2.2.4",
+   "Principle": "2.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Skill%20fysisk%20de%20mest%20kritiske"
+  },
+  {
+   "Id": "2.2.5",
+   "Principle": "2.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Del%20opp%20domenearkitekturen%20iht.%20virksomhetens"
+  },
+  {
+   "Id": "2.2.6",
+   "Principle": "2.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Reguler%20tilgang%20til%20tjenester%20basert"
+  },
+  {
+   "Id": "2.2.7",
+   "Principle": "2.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-en-sikker-ikt-arkitektur/#:~:text=Etabler%20en%20robust%20og%20motstandsdyktig"
+  },
+  {
+   "Id": "2.3.1",
+   "Principle": "2.3",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Etabler%20et%20sentralt%20styrt%20regime"
+  },
+  {
+   "Id": "2.3.2",
+   "Principle": "2.3",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Konfigurer%20klienter%20slik%20at%20kun"
+  },
+  {
+   "Id": "2.3.3",
+   "Principle": "2.3",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Deaktiver%20un%C3%B8dvendig%20funksjonalitet"
+  },
+  {
+   "Id": "2.3.4",
+   "Principle": "2.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Etabler%20og%20vedlikehold%20standard%20sikkerhetskonfigurasjoner"
+  },
+  {
+   "Id": "2.3.5",
+   "Principle": "2.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Verifiser%20at%20aktivert%20sikkerhetskonfigurasjon%20er"
+  },
+  {
+   "Id": "2.3.6",
+   "Principle": "2.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Utf%C3%B8r%20all%20konfigurasjon%2C%20installasjon%2C%20og"
+  },
+  {
+   "Id": "2.3.7",
+   "Principle": "2.3",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Endre%20alle%20standardpassord%20p%C3%A5%20IKT%2Dproduktene"
+  },
+  {
+   "Id": "2.3.8",
+   "Principle": "2.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Ikke%20deaktiver%20kodebeskyttelsesfunksjoner"
+  },
+  {
+   "Id": "2.3.9",
+   "Principle": "2.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Etabler%20sikker%20tid%20i%20virksomheten"
+  },
+  {
+   "Id": "2.3.10",
+   "Principle": "2.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ivareta-en-sikker-konfigurasjon/#:~:text=Reduser%20risiko%20med%20IoT%2Denheter"
+  },
+  {
+   "Id": "2.4.1",
+   "Principle": "2.4",
+   "Priority": 2,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-virksomhetens-nettverk/#:~:text=Etabler%20tilgangskontroll%20p%C3%A5%20flest%20mulige"
+  },
+  {
+   "Id": "2.4.2",
+   "Principle": "2.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-virksomhetens-nettverk/#:~:text=Krypter%20alle%20tr%C3%A5dl%C3%B8se%20og%20kablede"
+  },
+  {
+   "Id": "2.4.3",
+   "Principle": "2.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-virksomhetens-nettverk/#:~:text=Kartlegg%20fysisk%20tilgjengelighet%20for%20svitsjer"
+  },
+  {
+   "Id": "2.4.4",
+   "Principle": "2.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-virksomhetens-nettverk/#:~:text=Aktiver%20brannmur%20p%C3%A5%20alle%20klienter"
+  },
+  {
+   "Id": "2.5.1",
+   "Principle": "2.5",
+   "Priority": 2,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Styr%20dataflyt%20mellom%20nettverks%2Dsoner"
+  },
+  {
+   "Id": "2.5.2",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Begrens%20tilgangen%20til%20interne%20tjenester"
+  },
+  {
+   "Id": "2.5.3",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Sperr%20all%20direkte%2Dtrafikk%20mellom%20klienter"
+  },
+  {
+   "Id": "2.5.4",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Isoler%20utstyr%20som%20er%20s%C3%A5rbart"
+  },
+  {
+   "Id": "2.5.5",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Styr%20dataflyten%20til%20spesielt%20eksponerte"
+  },
+  {
+   "Id": "2.5.6",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Beskytt%20spesielt%20kritiske%20tjenester%20med"
+  },
+  {
+   "Id": "2.5.7",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Ha%20kontroll%20p%C3%A5%20trafikk%20mellom"
+  },
+  {
+   "Id": "2.5.8",
+   "Principle": "2.5",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/kontroller-dataflyt/#:~:text=Styr%20all%20trafikk%20%28ikke%20bare"
+  },
+  {
+   "Id": "2.6.1",
+   "Principle": "2.6",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Etabler%20retningslinjer%20for%20tilgangskontroll"
+  },
+  {
+   "Id": "2.6.2",
+   "Principle": "2.6",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Etabler%20en%20formell%20prosess%20for"
+  },
+  {
+   "Id": "2.6.3",
+   "Principle": "2.6",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Benytt%20et%20sentralisert%20og%20automatiserbart"
+  },
+  {
+   "Id": "2.6.4",
+   "Principle": "2.6",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Minimer%20rettigheter%20til%20sluttbrukere%20og"
+  },
+  {
+   "Id": "2.6.5",
+   "Principle": "2.6",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Minimer%20rettigheter%20p%C3%A5%20drifts%2Dkontoer"
+  },
+  {
+   "Id": "2.6.6",
+   "Principle": "2.6",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Styr%20tilganger%20til%20enheter"
+  },
+  {
+   "Id": "2.6.7",
+   "Principle": "2.6",
+   "Priority": 2,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/ha-kontroll-pa-identiteter-og-tilganger/#:~:text=Bruk%20multi%2Dfaktor%20autentisering"
+  },
+  {
+   "Id": "2.7.1",
+   "Principle": "2.7",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-data-i-ro-og-i-transitt/#:~:text=Etabler%20en%20strategi%20for%20h%C3%A5ndtering"
+  },
+  {
+   "Id": "2.7.2",
+   "Principle": "2.7",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-data-i-ro-og-i-transitt/#:~:text=Aktiver%20kryptering%20i%20de%20tjenestene"
+  },
+  {
+   "Id": "2.7.3",
+   "Principle": "2.7",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-data-i-ro-og-i-transitt/#:~:text=Krypter%20lagringsmedier%20som%20holder%20konfidensiell"
+  },
+  {
+   "Id": "2.7.4",
+   "Principle": "2.7",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-data-i-ro-og-i-transitt/#:~:text=Benytt%20kryptering%20n%C3%A5r%20konfidensiell%20informasjon"
+  },
+  {
+   "Id": "2.7.5",
+   "Principle": "2.7",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-data-i-ro-og-i-transitt/#:~:text=Definer%20krav%20til%20sikringsniv%C3%A5%20for"
+  },
+  {
+   "Id": "2.8.1",
+   "Principle": "2.8",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-e-post-og-nettleser/#:~:text=Verifiser%20at%20innkommende%20e%2Dpost%20er"
+  },
+  {
+   "Id": "2.8.2",
+   "Principle": "2.8",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-e-post-og-nettleser/#:~:text=Aktiver%20STARTTLS%20p%C3%A5%20virksomhetens%20e%2Dpostserver"
+  },
+  {
+   "Id": "2.8.3",
+   "Principle": "2.8",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-e-post-og-nettleser/#:~:text=Bruk%20kun%20st%C3%B8ttede%20e%2Dpostklienter%2C%20nettlesere"
+  },
+  {
+   "Id": "2.8.4",
+   "Principle": "2.8",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/beskytt-e-post-og-nettleser/#:~:text=Tillat%20kun%20virksomhetsgodkjente%20programtillegg"
+  },
+  {
+   "Id": "2.9.1",
+   "Principle": "2.9",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-evne-til-gjenoppretting-av-data/#:~:text=Legg%20en%20plan%20for%20regelmessig"
+  },
+  {
+   "Id": "2.9.2",
+   "Principle": "2.9",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-evne-til-gjenoppretting-av-data/#:~:text=Inkluder%20sikkerhetskopier%20av%20programvare"
+  },
+  {
+   "Id": "2.9.3",
+   "Principle": "2.9",
+   "Priority": 2,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-evne-til-gjenoppretting-av-data/#:~:text=Test%20sikkerhetskopier%20regelmessig"
+  },
+  {
+   "Id": "2.9.4",
+   "Principle": "2.9",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/etabler-evne-til-gjenoppretting-av-data/#:~:text=Beskytt%20sikkerhetskopier%20mot%20tilsiktet%20og"
+  },
+  {
+   "Id": "2.10.1",
+   "Principle": "2.10",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/integrer-sikkerhet-i-prosess-for-endringshandtering/#:~:text=Integrer%20sikkerhet%20i%20virksomhetens%20prosess"
+  },
+  {
+   "Id": "2.10.2",
+   "Principle": "2.10",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/integrer-sikkerhet-i-prosess-for-endringshandtering/#:~:text=Involver%20n%C3%B8dvendig%20IKT%2Dsikkerhetspersonell%20i%20forbindelse"
+  },
+  {
+   "Id": "2.10.3",
+   "Principle": "2.10",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/integrer-sikkerhet-i-prosess-for-endringshandtering/#:~:text=Gjennomf%C3%B8r%20n%C3%B8dvendig%20endring%2C%20konfigurering%20og"
+  },
+  {
+   "Id": "2.10.4",
+   "Principle": "2.10",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/beskytte-og-opprettholde/integrer-sikkerhet-i-prosess-for-endringshandtering/#:~:text=Integrer%20sikkerhet%20i%20virksomhetens%20prosess"
+  },
+  {
+   "Id": "3.1.1",
+   "Principle": "3.1",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/oppdag-og-fjern-kjente-sarbarheter-og-trusler/#:~:text=Gjennomf%C3%B8r%20jevnlig%20s%C3%A5rbarhetskartlegging"
+  },
+  {
+   "Id": "3.1.2",
+   "Principle": "3.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/oppdag-og-fjern-kjente-sarbarheter-og-trusler/#:~:text=Abonner%20p%C3%A5%20tjenester%20relatert%20til"
+  },
+  {
+   "Id": "3.1.3",
+   "Principle": "3.1",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/oppdag-og-fjern-kjente-sarbarheter-og-trusler/#:~:text=Benytt%20automatisert%20og%20sentralisert%20verkt%C3%B8y"
+  },
+  {
+   "Id": "3.2.1",
+   "Principle": "3.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=Fastsett%20virksomhetens%20strategi%20og%20retningslinjer"
+  },
+  {
+   "Id": "3.2.2",
+   "Principle": "3.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=F%C3%B8lg%20lover%2C%20reguleringer%20og%20virksomhetens"
+  },
+  {
+   "Id": "3.2.3",
+   "Principle": "3.2",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=Avgj%C3%B8r%20hvilke%20deler%20av%20IKT%2Dsystemet"
+  },
+  {
+   "Id": "3.2.4",
+   "Principle": "3.2",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=Beslutt%20hvilke%20data%20som%20er"
+  },
+  {
+   "Id": "3.2.5",
+   "Principle": "3.2",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=Verifiser%20at%20innsamling%20fungerer%20etter"
+  },
+  {
+   "Id": "3.2.6",
+   "Principle": "3.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=P%C3%A5se%20at%20innsamlet%20data%20ikke"
+  },
+  {
+   "Id": "3.2.7",
+   "Principle": "3.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/etabler-sikkerhetsovervakning/#:~:text=Gjennomg%C3%A5%20og%20konfigurer%20innhenting%20av"
+  },
+  {
+   "Id": "3.3.1",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Lage%20en%20plan%20for%20analyse"
+  },
+  {
+   "Id": "3.3.2",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Etabler%20og%20vedlikehold%20kompetanse%20om"
+  },
+  {
+   "Id": "3.3.3",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Ta%20i%20bruk%20verkt%C3%B8y%20som"
+  },
+  {
+   "Id": "3.3.4",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Innhent%20og%20bearbeid%20trusselinformasjon%20fra"
+  },
+  {
+   "Id": "3.3.5",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Vurder%20fortl%C3%B8pende%20om%20innhentet%20data"
+  },
+  {
+   "Id": "3.3.6",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Etabler%20rutine%20for%20eskalering%20av"
+  },
+  {
+   "Id": "3.3.7",
+   "Principle": "3.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/analyser-data-fra-sikkerhetsovervakning/#:~:text=Benytt%20analyseverkt%C3%B8y%2C%20teknologi%20og%20algoritmer"
+  },
+  {
+   "Id": "3.4.1",
+   "Principle": "3.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/gjennomfor-inntrengningstester/#:~:text=Planlegg%20inntrengingstester%20med%20tydelig%20m%C3%A5l"
+  },
+  {
+   "Id": "3.4.2",
+   "Principle": "3.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/gjennomfor-inntrengningstester/#:~:text=Involver%20relevante%20interesseparter%20i%20forkant"
+  },
+  {
+   "Id": "3.4.3",
+   "Principle": "3.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/gjennomfor-inntrengningstester/#:~:text=Benytt%20verkt%C3%B8y%20for%20s%C3%A5rbarhetskartlegging%20og"
+  },
+  {
+   "Id": "3.4.4",
+   "Principle": "3.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/gjennomfor-inntrengningstester/#:~:text=Gjennomf%C3%B8r%20jevnlige%20inntrengingstester%20%28minst%20%C3%A5rlige%29"
+  },
+  {
+   "Id": "3.4.5",
+   "Principle": "3.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/gjennomfor-inntrengningstester/#:~:text=Test%20rutiner%20for%20deteksjon%20og"
+  },
+  {
+   "Id": "3.4.6",
+   "Principle": "3.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/oppdage/gjennomfor-inntrengningstester/#:~:text=Kommuniser%20resultater%20fra%20inntrengingstester%20til"
+  },
+  {
+   "Id": "4.1.1",
+   "Principle": "4.1",
+   "Priority": 1,
+   "InAlert": true,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/forbered-virksomheten-pa-handtering-av-hendelser/#:~:text=Etabler%20et%20planverk%20for%20hendelsesh%C3%A5ndtering"
+  },
+  {
+   "Id": "4.1.2",
+   "Principle": "4.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/forbered-virksomheten-pa-handtering-av-hendelser/#:~:text=Gjennomf%C3%B8r%20en%20analyse%20av%20virksomhetskritiske"
+  },
+  {
+   "Id": "4.1.3",
+   "Principle": "4.1",
+   "Priority": 2,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/forbered-virksomheten-pa-handtering-av-hendelser/#:~:text=Utarbeid%20rolle%2D%20og%20ansvarsbeskrivelse%20for"
+  },
+  {
+   "Id": "4.1.4",
+   "Principle": "4.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/forbered-virksomheten-pa-handtering-av-hendelser/#:~:text=Utarbeid%20avtaler%20med%20relevante%20tredjeparter"
+  },
+  {
+   "Id": "4.1.5",
+   "Principle": "4.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/forbered-virksomheten-pa-handtering-av-hendelser/#:~:text=Fastsett%20hvilke%20kommunikasjonskanaler%20som%20skal"
+  },
+  {
+   "Id": "4.1.6",
+   "Principle": "4.1",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/forbered-virksomheten-pa-handtering-av-hendelser/#:~:text=Test%20og%20%C3%B8v%20p%C3%A5%20planer"
+  },
+  {
+   "Id": "4.2.1",
+   "Principle": "4.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/vurder-og-klassifiser-hendelser/#:~:text=Gjennomg%C3%A5%20loggdata%20og%20samle%20relevante"
+  },
+  {
+   "Id": "4.2.2",
+   "Principle": "4.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/vurder-og-klassifiser-hendelser/#:~:text=Avgj%C3%B8r%20alvorlighetsgrad%20for%20hendelsen"
+  },
+  {
+   "Id": "4.2.3",
+   "Principle": "4.2",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/vurder-og-klassifiser-hendelser/#:~:text=Informer%20relevante%20interesseparter"
+  },
+  {
+   "Id": "4.3.1",
+   "Principle": "4.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/kontroller-og-handter-hendelser/#:~:text=Kartlegg%20omfang%20og%20p%C3%A5virkning%20p%C3%A5"
+  },
+  {
+   "Id": "4.3.2",
+   "Principle": "4.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/kontroller-og-handter-hendelser/#:~:text=Unders%C3%B8k%20om%20hendelsen%20er%20under"
+  },
+  {
+   "Id": "4.3.3",
+   "Principle": "4.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/kontroller-og-handter-hendelser/#:~:text=Loggf%C3%B8r%20alle%20aktiviteter%2C%20resultater%20og"
+  },
+  {
+   "Id": "4.3.4",
+   "Principle": "4.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/kontroller-og-handter-hendelser/#:~:text=Iverksett%20gjenopprettingsplan%20i%20l%C3%B8pet%20av%2C"
+  },
+  {
+   "Id": "4.3.5",
+   "Principle": "4.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/kontroller-og-handter-hendelser/#:~:text=Koordiner%20og%20kommuniser%20med%20interne"
+  },
+  {
+   "Id": "4.3.6",
+   "Principle": "4.3",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/kontroller-og-handter-hendelser/#:~:text=Gjennomf%C3%B8r%20n%C3%B8dvendige%20aktiviteter%20i%20etterkant"
+  },
+  {
+   "Id": "4.4.1",
+   "Principle": "4.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/evaluer-og-laer-av-hendelser/#:~:text=Identifiser%20erfaringer%20og%20l%C3%A6ringspunkter%20%28%C2%ABlessons"
+  },
+  {
+   "Id": "4.4.2",
+   "Principle": "4.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/evaluer-og-laer-av-hendelser/#:~:text=Kartlegg%20og%20gjennomg%C3%A5%20identifiserte%2C%20kompromitterte"
+  },
+  {
+   "Id": "4.4.3",
+   "Principle": "4.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/evaluer-og-laer-av-hendelser/#:~:text=Vurdere%20effektiviteten%20av%20prosesser%2C%20prosedyrer%2C"
+  },
+  {
+   "Id": "4.4.4",
+   "Principle": "4.4",
+   "Priority": 3,
+   "InAlert": false,
+   "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/handtere-og-gjenopprette/evaluer-og-laer-av-hendelser/#:~:text=Kommuniser%20og%20del%20erfaringsresultatene%20med"
+  }
+ ]
+}

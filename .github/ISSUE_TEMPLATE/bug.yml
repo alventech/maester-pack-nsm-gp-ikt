@@ -1,0 +1,26 @@
+name: Bug
+description: A test errors, skips without a reason, or the pack does not install or run.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste reports, tenant IDs, domains or names from your tenant.
+  - type: input
+    id: versions
+    attributes:
+      label: Pack, Maester and PowerShell version
+      placeholder: pack 0.3.0, Maester 3.0.0, PowerShell 7.4.6
+    validations:
+      required: true
+  - type: dropdown
+    id: auth
+    attributes:
+      label: Connection
+      options: [Delegated, App-only, Other]
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and the error text (without names)
+    validations:
+      required: true

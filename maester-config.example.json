@@ -1,0 +1,20 @@
+{
+  "GlobalSettings": {
+    "EmergencyAccessAccounts": [
+      {
+        "UserPrincipalName": "breakglass1@contoso.onmicrosoft.com",
+        "Type": "user"
+      },
+      {
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "Type": "group"
+      }
+    ],
+    "NsmGpIkt.MinimumWindowsBuild": 26100,
+    "NsmGpIkt.AllowedWindowsBuilds": [
+      17763,
+      19044
+    ],
+    "NsmGpIkt.BaselinePolicyPattern": "(?i)\\bCIS\\b|baseline"
+  }
+}

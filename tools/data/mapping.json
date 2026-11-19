@@ -1,0 +1,694 @@
+{
+ "_note": "The mapping from each test to NSM's measures: the single place it is kept. Each test's Control must equal the refs here whose strength is direkte or delvis, in this order, and its scope must equal 'scope' (unit-tests/NsmPack.Tests.ps1 checks both). tools/generate_docs.py writes docs/tests.md, docs/coverage.md and the tables in docs/mapping.md from this file; tools/export_frameworks.py writes the NSM links in each test's .md. 'why' is Norwegian because the Maester report shows it.",
+ "version": "0.3.0",
+ "measurementChanged": {
+  "_note": "Tests whose measurement (not only their mapping) changed in a version. A result from an older pack version is not comparable and must not set a level.",
+  "0.3.0": [
+   "2002",
+   "3001",
+   "3004",
+   "3005"
+  ]
+ },
+ "strengths": {
+  "direkte": "The setting or state the test reads is what the clause asks for, within the test's scope. Sets the level for the measure in that scope.",
+  "delvis": "Evidence for part of the clause: a policy without the outcome on devices or accounts, one of several things the clause asks for, or the author's reading of a measure that names no such feature. Sets a level, shown as partial coverage.",
+  "indikator": "Points in a direction. Shown in the report, never in Control, never counted as coverage and never sets a level for the measure."
+ },
+ "references": {
+  "zeroTrust": "Pillar in Microsoft's Zero Trust model: Identities, Endpoints, Applications, Data, Infrastructure, Network.",
+  "mcsb": "Nearest control in Microsoft cloud security benchmark v1, the taxonomy Defender for Cloud and the Azure Policy initiative in this project use. A cross-reference for the reader, not a claim that the test measures the MCSB control.",
+  "mitre": "MITRE ATT&CK techniques the report shows on the ATT&CK tab. Each set is copied from the Maester test in 'sameAs', which reads the same setting (for 1002 and 1003: the Conditional Access policy that enforces the methods they count), so the pack makes no ATT&CK mapping of its own. A test with no such Maester test has none: 3007 has none, since Maester checks Windows versions only in update policies (MT.1102), which names no techniques."
+ },
+ "tests": {
+  "1001": {
+   "scope": "Entra ID-kontoer, pålogging til skyapper",
+   "feature": "Conditional Access med en phishing-resistent authentication strength",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "IM-6",
+    "IM-7"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.3.1",
+    "ids": [
+     "T1566.002"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-varsel-2026:V1",
+     "clause": null,
+     "strength": "direkte",
+     "why": "Varselet ber om phishing-resistent MFA. En Conditional Access-policy med phishing-resistent authentication strength er kravet håndhevet ved pålogging."
+    }
+   ]
+  },
+  "1002": {
+   "scope": "Kontoer med katalogroller i Entra ID",
+   "feature": "Registrerte autentiseringsmetoder (passkey, FIDO2, Windows Hello for Business)",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "IM-6"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.3.6",
+    "ids": [
+     "T1078.004",
+     "T1566.002"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-varsel-2026:V1",
+     "clause": null,
+     "strength": "delvis",
+     "why": "En registrert metode viser at administratorene kan bruke phishing-resistent MFA, ikke at den kreves. Kravet måles av MP.NSM.1001."
+    }
+   ]
+  },
+  "1003": {
+   "scope": "Aktive, lisensierte medlemskontoer i Entra ID",
+   "feature": "Registrerte autentiseringsmetoder (passkey, FIDO2, Windows Hello for Business)",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "IM-6"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.3.1",
+    "ids": [
+     "T1566.002"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-varsel-2026:V1",
+     "clause": null,
+     "strength": "delvis",
+     "why": "En registrert metode viser at brukerne kan bruke phishing-resistent MFA, ikke at den kreves. Kravet måles av MP.NSM.1001."
+    }
+   ]
+  },
+  "1004": {
+   "scope": "Entra ID-tenanten",
+   "feature": "Policyen for autentiseringsmetoder",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "IM-6"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.3.5",
+    "ids": [
+     "T1566.002",
+     "T1621",
+     "T1111"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-varsel-2026:V1",
+     "clause": null,
+     "strength": "delvis",
+     "why": "Policyen gjør phishing-resistente metoder tilgjengelige og slår av de svakeste. Den er en forutsetning for kravet, ikke kravet selv."
+    }
+   ]
+  },
+  "1005": {
+   "scope": "Entra ID-kontoer, pålogging til skyapper",
+   "feature": "Conditional Access som krever multifaktorautentisering",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "IM-6",
+    "IM-7"
+   ],
+   "mitre": {
+    "sameAs": "MT.1007",
+    "ids": [
+     "T1078.004",
+     "T1110"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.7",
+     "clause": "a",
+     "strength": "direkte",
+     "why": "2.6.7 a) ber om multi-faktor som et minimum for kontoer med tilgang til kritiske data og for brukere med driftsoppgaver. MFA for alle brukere og alle apper dekker begge."
+    }
+   ]
+  },
+  "1006": {
+   "scope": "Katalogroller i Entra ID",
+   "feature": "Privileged Identity Management: eligible i stedet for permanente rolletildelinger",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "PA-1",
+    "PA-2"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.7.4",
+    "ids": [
+     "T1098.003"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.5",
+     "clause": "b",
+     "strength": "delvis",
+     "why": "2.6.5 b) ber om å begrense bruken av kontoer med fulle rettigheter til et minimum. Få permanente tildelinger er forfatterens lesning av det for Entra ID; NSM nevner ikke tidsbegrensning."
+    }
+   ]
+  },
+  "1007": {
+   "scope": "Katalogroller i Entra ID",
+   "feature": "Privileged Identity Management: godkjenning og begrunnelse ved aktivering",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "PA-2"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.7.6",
+    "ids": [
+     "T1098.003",
+     "T1548.005"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.1",
+     "clause": "d",
+     "strength": "direkte",
+     "why": "2.6.1 d) sier at tilganger og rettigheter bør spores til en ansvarlig rolle og person som godkjente dem. Godkjenning og begrunnelse ved aktivering i PIM er den sporingen."
+    },
+    {
+     "ref": "nsm-gp-ikt:2.6.5",
+     "clause": "b",
+     "strength": "delvis",
+     "why": "Roller som må aktiveres, begrenser bruken av kontoer med fulle rettigheter, som 2.6.5 b) ber om."
+    }
+   ]
+  },
+  "1008": {
+   "scope": "Gjestekontoer i Entra ID",
+   "feature": "Access reviews (access reviews) for gjester",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "PA-4"
+   ],
+   "mitre": {
+    "sameAs": "CIS.M365.5.3.2",
+    "ids": [
+     "T1078.004"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.1",
+     "clause": "e",
+     "strength": "direkte",
+     "why": "2.6.1 e) sier at kontoer, tilganger og rettigheter bør revideres jevnlig. En gjentakende access review er den revisjonen, her for gjester. Driftskontoer, som NSM kaller spesielt kritiske, måles ikke."
+    }
+   ]
+  },
+  "1009": {
+   "scope": "Entra ID-tenanten",
+   "feature": "Innstillinger for user consent til apper",
+   "zeroTrust": "Applications",
+   "mcsb": [
+    "PA-7"
+   ],
+   "mitre": {
+    "sameAs": "CIS.M365.5.1.5.1",
+    "ids": [
+     "T1528",
+     "T1566.002"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.4",
+     "clause": null,
+     "strength": "delvis",
+     "why": "2.6.4 ber om å minimere rettighetene til sluttbrukere. Retten til å gi en app tilgang til virksomhetens data er en slik rettighet. NSM nevner ikke app consent; dette er forfatterens lesning."
+    }
+   ]
+  },
+  "1010": {
+   "scope": "Entra ID-tenanten",
+   "feature": "Anbefalinger i Microsoft Entra",
+   "zeroTrust": "Identities",
+   "mcsb": [],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.7",
+     "clause": null,
+     "strength": "indikator",
+     "why": "En blandet liste telt etter antall. Den viser retning, og flere av anbefalingene gjelder MFA, men den beviser ikke noe enkelt tiltak."
+    }
+   ]
+  },
+  "1011": {
+   "scope": "Windows-enheter som kobles til Entra ID",
+   "feature": "Device settings i Entra ID: lokale administratorer på Entra joined-enheter",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "PA-7"
+   ],
+   "mitre": {
+    "sameAs": "MT.1091",
+    "ids": [
+     "T1078.004"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.6.4",
+     "clause": "a",
+     "strength": "direkte",
+     "why": "2.6.4 a) sier: ikke tildel administrator-rettigheter til sluttbrukere. Innstillingen avgjør om brukeren som kobler en enhet til Entra ID, blir lokal administrator på den."
+    }
+   ]
+  },
+  "1012": {
+   "scope": "Entra ID-kontoer, pålogging til skyapper",
+   "feature": "Conditional Access som krever en compliant enhet eller hybrid joined enhet",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "IM-7"
+   ],
+   "mitre": {
+    "sameAs": "CISA.MS.AAD.3.7",
+    "ids": [
+     "T1078.004"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.2.6",
+     "clause": null,
+     "strength": "direkte",
+     "why": "2.2.6 ber om å regulere tilgang til tjenester ut fra kjennskap til både bruker og enhet. En Conditional Access-policy som krever en forvaltet enhet, er NSMs eget eksempel."
+    }
+   ]
+  },
+  "2001": {
+   "scope": "Entra ID-kontoer, pålogging til skyapper",
+   "feature": "Conditional Access som blokkerer legacy authentication, eller security defaults",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "NS-8",
+    "IM-6"
+   ],
+   "mitre": {
+    "sameAs": "MT.1010",
+    "ids": [
+     "T1078.004",
+     "T1110"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.3",
+     "clause": "i",
+     "strength": "direkte",
+     "why": "2.3.3 i) nevner eldre eller ubrukte protokoller. Legacy authentication bruker slike protokoller for pålogging."
+    },
+    {
+     "ref": "nsm-gp-ikt:2.6.7",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "Legacy authentication kan ikke bruke MFA. Å blokkere den er en forutsetning for at MFA-kravet i 2.6.7 gjelder all pålogging."
+    }
+   ]
+  },
+  "2002": {
+   "scope": "Exchange Online, SharePoint og Teams, Windows-klienter i Defender for Endpoint og lokal AD i Defender for Identity",
+   "feature": "Navngitte anbefalinger i Microsoft Secure Score som slår av eldre protokoller og unødvendige funksjoner",
+   "zeroTrust": "Applications",
+   "mcsb": [
+    "NS-8",
+    "PV-2"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.3",
+     "clause": null,
+     "strength": "delvis",
+     "why": "2.3.3 ber om å slå av innebygd funksjonalitet som ikke trengs, som eldre protokoller. Forfatteren har valgt anbefalingene; hvilke som finnes i tenanten, avhenger av lisensene, og resultatet sier hvor mange som ble vurdert."
+    }
+   ]
+  },
+  "2003": {
+   "scope": "Ansatte med postboks i Microsoft 365",
+   "feature": "Angrepssimulering (attack simulation training) i Defender for Office 365",
+   "zeroTrust": "Identities",
+   "mcsb": [],
+   "cites": [
+    {
+     "ref": "nsm-varsel-2026:V7",
+     "clause": null,
+     "strength": "delvis",
+     "why": "Varselet ber om å verifisere at tiltakene virker, også mot sosial manipulering. En phishing-simulering er én slik verifisering; den tester ikke MFA-flyten eller de tekniske tiltakene."
+    }
+   ]
+  },
+  "2004": {
+   "scope": "Domenekontrollere i lokal Active Directory",
+   "feature": "Sensor for Microsoft Defender for Identity",
+   "zeroTrust": "Identities",
+   "mcsb": [
+    "LT-1",
+    "LT-2"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:3.2.3",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "3.2.3 er en beslutning om hvilke deler av IKT-systemet som skal overvåkes. En sensor viser at beslutningen er gjennomført for domenekontrollerne, ikke at den er tatt for resten."
+    },
+    {
+     "ref": "nsm-gp-ikt:3.2.4",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "Sensoren samler inn pålogginger og katalogendringer fra domenekontrollerne, en del av dataene 3.2.4 ber om."
+    }
+   ]
+  },
+  "2005": {
+   "scope": "Outlook i Exchange Online",
+   "feature": "Role assignment policy i Exchange Online: brukere kan ikke installere Outlook-tillegg",
+   "zeroTrust": "Applications",
+   "mcsb": [
+    "PV-2"
+   ],
+   "mitre": {
+    "sameAs": "MT.1041",
+    "ids": [
+     "T1137.006",
+     "T1114.002"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.8.4",
+     "clause": null,
+     "strength": "direkte",
+     "why": "2.8.4 sier: tillat kun virksomhetsgodkjente programtillegg, og nevner e-postleseren. Når brukere ikke kan installere Outlook-tillegg selv, er det bare de virksomheten ruller ut som kjører. Nettlesertillegg måles ikke."
+    }
+   ]
+  },
+  "3001": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Windows LAPS styrt av Intune og slått på i Entra ID",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "PA-1"
+   ],
+   "mitre": {
+    "sameAs": "MT.1177",
+    "ids": [
+     "T1078.003",
+     "T1021"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.7",
+     "clause": null,
+     "strength": "delvis",
+     "why": "2.3.7 ber om å endre alle standardpassord. Windows har ikke et standardpassord, men et felles passord på lokale administratorkontoer virker som ett. LAPS gir hver enhet sitt eget. Dette er forfatterens lesning."
+    }
+   ]
+  },
+  "3002": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Update rings i Windows Update for Business",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "PV-6"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.1",
+     "clause": "d",
+     "strength": "delvis",
+     "why": "2.3.1 ber om et sentralt styrt regime og automatisering (d). En tildelt update ring og enheter som synkroniserer med Intune, viser at regimet finnes for Windows-klienter. Sjekken måler ikke hvor raskt oppdateringene blir installert."
+    }
+   ]
+  },
+  "3003": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "App Control for Business, eller AppLocker",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "AM-5"
+   ],
+   "mitre": {
+    "sameAs": "MT.1179",
+    "ids": [
+     "T1204.002"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.2",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "2.3.2 a) og b) ber om allowlisting av programmer på klienter. En tildelt policy viser at allowlisting er satt opp, ikke at den håndheves på hver enhet."
+    }
+   ]
+  },
+  "3004": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Attack surface reduction-regler (ASR) i Microsoft Defender",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "ES-1"
+   ],
+   "mitre": {
+    "sameAs": "MT.1178",
+    "ids": [
+     "T1003.001",
+     "T1546.003",
+     "T1068"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:3.1.3",
+     "clause": "b",
+     "strength": "delvis",
+     "why": "3.1.3 b) ber om IDS/IPS-funksjonalitet på klienter. ASR-regler stopper kjente angrepsmønstre på klienten. En tildelt policy viser at reglene styres sentralt, ikke at de står i block-modus på hver enhet."
+    },
+    {
+     "ref": "nsm-gp-ikt:2.3.2",
+     "clause": "d",
+     "strength": "delvis",
+     "why": "2.3.2 d) gjelder programkode som følger med dokumenter, som makroer. Flere ASR-regler begrenser hva Office-makroer og -dokumenter kan starte."
+    }
+   ]
+  },
+  "3005": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "BitLocker, lest som krypteringsstatus per enhet",
+   "zeroTrust": "Data",
+   "mcsb": [
+    "DP-4"
+   ],
+   "mitre": {
+    "sameAs": "MT.1123",
+    "ids": [
+     "T1005"
+    ]
+   },
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.7.3",
+     "clause": null,
+     "strength": "direkte",
+     "why": "2.7.3 ber om å kryptere lagringsmedier som lett kan mistes, som mobile klienter. Sjekken teller enhetene Intune melder som kryptert."
+    }
+   ]
+  },
+  "3006": {
+   "scope": "Windows-enheter i Entra ID",
+   "feature": "Enhetsoversikten i Entra ID, med forvaltningsstatus",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "AM-1"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:1.2.3",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "1.2.3 a) ber om oversikt over enhetene, blant annet om de er forvaltet av virksomheten. Sjekken dekker Windows-enheter som logger på Entra ID, ikke mobile enheter, servere, nettverksutstyr eller skrivere."
+    }
+   ]
+  },
+  "3007": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Windows-versjon per enhet",
+   "zeroTrust": "Endpoints",
+   "mcsb": [],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.1.2",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "2.1.2 ber om moderne og oppdatert maskin- og programvare. En Windows-versjon med støtte er en del av det for klientene."
+    }
+   ]
+  },
+  "3008": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Windows-brannmuren styrt av en Endpoint security-policy i Intune",
+   "zeroTrust": "Network",
+   "mcsb": [],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.4.4",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "2.4.4 sier: aktiver brannmur på alle klienter og servere. En tildelt brannmurpolicy viser at brannmuren styres sentralt på Windows-klientene, ikke at den er på hver enhet. Servere måles ikke."
+    }
+   ]
+  },
+  "3009": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Microsoft Defender Antivirus styrt av en Endpoint security-policy i Intune",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "ES-2"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:3.1.3",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "3.1.3 a) ber om antivirus, fortrinnsvis sentralt styrt. En tildelt antiviruspolicy viser at løsningen styres sentralt, ikke at den er aktiv og oppdatert på hver enhet."
+    }
+   ]
+  },
+  "3010": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Security baseline i Intune, eller en baseline i Settings catalog",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "PV-3"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.4",
+     "clause": "a",
+     "strength": "delvis",
+     "why": "2.3.4 ber om en standard sikkerhetskonfigurasjon per type enhet, sentralisert (a). En tildelt security baseline er den standarden for Windows-klienter. Gjennomgang og endringshåndtering (b, c) måles ikke."
+    }
+   ]
+  },
+  "3011": {
+   "scope": "Windows-klienter i Intune",
+   "feature": "Compliance policies for enheter i Intune",
+   "zeroTrust": "Endpoints",
+   "mcsb": [
+    "PV-4"
+   ],
+   "cites": [
+    {
+     "ref": "nsm-gp-ikt:2.3.5",
+     "clause": "d",
+     "strength": "delvis",
+     "why": "2.3.5 ber om å sammenligne aktivert konfigurasjon med den godkjente, automatisk og regelmessig (a, d). Intune gjør det mot compliance policies. Hva som blir sammenlignet, avhenger av hva policyene krever."
+    }
+   ]
+  }
+ },
+ "planned": [
+  {
+   "ref": "nsm-gp-ikt:2.6.3",
+   "clause": "d",
+   "feature": "Påloggingsaktivitet: kontoer som ikke er brukt på lenge",
+   "signal": "users?$select=signInActivity",
+   "needs": "AuditLog.Read.All"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.6.3",
+   "clause": "e",
+   "feature": "Microsoft Entra Password Protection med egen liste over forbudte passord",
+   "signal": "Not confirmed: the directory setting template for password protection",
+   "needs": "Directory.Read.All"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.6.3",
+   "clause": "c",
+   "feature": "Utløpsdato på gjester og tilgangspakker, livssyklusarbeidsflyter (Lifecycle Workflows)",
+   "signal": "identityGovernance/entitlementManagement/assignmentPolicies",
+   "needs": "EntitlementManagement.Read.All"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.6.1",
+   "clause": "e",
+   "feature": "Access reviews av privilegerte roller",
+   "signal": "identityGovernance/accessReviews/definitions scoped to role assignments",
+   "needs": "AccessReview.Read.All"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.6.5",
+   "clause": "c",
+   "feature": "Personlige administratorkontoer som bare finnes i skyen",
+   "signal": "Role assignments joined with onPremisesSyncEnabled",
+   "needs": "RoleManagement.Read.Directory, Directory.Read.All"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.3.6",
+   "clause": "b",
+   "feature": "Conditional Access som krever en forvaltet enhet for administratorroller",
+   "signal": "Conditional Access policies that include directory roles",
+   "needs": "Policy.Read.All"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.8.1",
+   "clause": null,
+   "feature": "SPF, DKIM og DMARC",
+   "signal": "DNS and Exchange Online; Maester's built-in tests already read this",
+   "needs": "Exchange Online og DNS"
+  },
+  {
+   "ref": "nsm-gp-ikt:1.2.4",
+   "clause": "a",
+   "feature": "Programvareoversikten i Defender Vulnerability Management, med CPE og slutt på støtte",
+   "signal": "Advanced hunting: DeviceTvmSoftwareInventory (columns not confirmed)",
+   "needs": "ThreatHunting.Read.All, Defender for Endpoint P2"
+  },
+  {
+   "ref": "nsm-gp-ikt:3.2.4",
+   "clause": "a",
+   "feature": "Diagnostikkinnstillinger i Entra ID som sender logger til Log Analytics eller Sentinel",
+   "signal": "Azure Resource Manager, not Graph",
+   "needs": "Leserrollen i Azure; pakken bruker bare Graph i dag"
+  },
+  {
+   "ref": "nsm-gp-ikt:2.9.1",
+   "clause": null,
+   "feature": "Microsoft 365 Backup",
+   "signal": "solutions/backupRestore (not confirmed)",
+   "needs": "BackupRestore-Configuration.Read.All"
+  }
+ ],
+ "attest": {
+  "_note": "Measures in NSM's alert that a tenant cannot show. Attest them with evidence and an expiry date instead of forcing a Microsoft feature onto them.",
+  "measures": [
+   "1.3.3",
+   "2.1.9",
+   "2.2.1",
+   "2.9.3",
+   "4.1.1",
+   "V2",
+   "V3",
+   "V4"
+  ]
+ },
+ "_language": "feature and planned.feature are shown to users (dashboard, README) and are Norwegian; see docs/language.md."
+}

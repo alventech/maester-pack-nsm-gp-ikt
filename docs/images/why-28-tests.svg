@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 474" width="720" height="474" font-family="Segoe UI, system-ui, -apple-system, sans-serif"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3b3b3b"/></marker></defs><rect width="720" height="474" rx="12" fill="#ffffff"/>
+<rect x="2.0" y="2" width="716" height="64" rx="8" fill="#e8f1fb" stroke="#e8f1fb" stroke-width="1.5"/>
+<text x="20.0" y="44" font-size="28" font-weight="700" fill="#242424" text-anchor="start">118</text>
+<text x="92.0" y="29" font-size="15" font-weight="700" fill="#242424" text-anchor="start">measures in GP-IKT 2.1</text>
+<text x="92.0" y="49" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="start">21 principles in 4 areas. Priority 1: 15, priority 2: 20, priority 3: 83</text>
+<text x="360.0" y="91" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="middle">↓  The alert of 27.10.2026 says what to do first: the pack started there</text>
+<rect x="26.0" y="102" width="668" height="64" rx="8" fill="#cfe4fa" stroke="#cfe4fa" stroke-width="1.5"/>
+<text x="44.0" y="144" font-size="28" font-weight="700" fill="#242424" text-anchor="start">28</text>
+<text x="116.0" y="129" font-size="15" font-weight="700" fill="#242424" text-anchor="start">measures in NSM's alert</text>
+<text x="116.0" y="149" font-size="12.5" font-weight="400" fill="#424242" text-anchor="start">21 GP-IKT measures to do now, plus 7 extra (V1 to V7)</text>
+<text x="360.0" y="191" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="middle">↓  8 need an owner's attestation: plans, contracts, restore tests</text>
+<rect x="50.0" y="202" width="620" height="64" rx="8" fill="#96c6fa" stroke="#96c6fa" stroke-width="1.5"/>
+<text x="68.0" y="244" font-size="28" font-weight="700" fill="#242424" text-anchor="start">20</text>
+<text x="140.0" y="229" font-size="15" font-weight="700" fill="#242424" text-anchor="start">alert measures a system can show</text>
+<text x="140.0" y="249" font-size="12.5" font-weight="400" fill="#242424" text-anchor="start">Microsoft 365, Azure, Defender, servers and network</text>
+<text x="360.0" y="291" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="middle">↓  This pack reads Microsoft Graph; Azure, servers, network and AD are measured elsewhere</text>
+<rect x="74.0" y="302" width="572" height="64" rx="8" fill="#0f6cbd" stroke="#0f6cbd" stroke-width="1.5"/>
+<text x="92.0" y="344" font-size="28" font-weight="700" fill="#ffffff" text-anchor="start">13</text>
+<text x="164.0" y="329" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">alert measures with a test</text>
+<text x="164.0" y="349" font-size="12.5" font-weight="400" fill="#e8f1fb" text-anchor="start">Plus 8 outside the alert: 21 in all, 10 of the 15 priority-1 measures</text>
+<text x="360.0" y="391" font-size="12.5" font-weight="400" fill="#605e5c" text-anchor="middle">↓  A test answers one clause of a measure, in one scope</text>
+<rect x="98.0" y="402" width="524" height="64" rx="8" fill="#0c3b5e" stroke="#0c3b5e" stroke-width="1.5"/>
+<text x="116.0" y="444" font-size="28" font-weight="700" fill="#ffffff" text-anchor="start">28</text>
+<text x="188.0" y="429" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">Maester tests</text>
+<text x="188.0" y="449" font-size="12.5" font-weight="400" fill="#e8f1fb" text-anchor="start">Entra ID, Microsoft 365, Defender and Intune</text>
+</svg>

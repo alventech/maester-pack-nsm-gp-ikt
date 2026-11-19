@@ -1,0 +1,84 @@
+name: Release
+
+# Runs when a version tag (v0.3.0) is pushed. Checks the pack, then creates the GitHub release with the
+# Maester 2 zip attached. Only the release job can write, and only to this repository's releases.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Pinned to a commit, not a tag: a moved tag cannot change what runs. v7.0.1.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: The tag matches the pack's version
+        shell: pwsh
+        run: |
+          $version = (Get-Content ./nsm-gp-ikt/maester-pack.json -Raw | ConvertFrom-Json).Version
+          if ("v$version" -ne $env:GITHUB_REF_NAME) { throw "Tag $env:GITHUB_REF_NAME does not match Version $version." }
+
+      - name: Test-MtPack and unit tests
+        shell: pwsh
+        run: |
+          Install-PSResource -Name Maester -Version 3.0.0-rc83 -Prerelease -Scope CurrentUser -TrustRepository
+          Install-PSResource -Name Pester -Version 5.7.1 -Scope CurrentUser -TrustRepository
+          Import-Module Maester -RequiredVersion 3.0.0
+          $r = Test-MtPack -Path ./nsm-gp-ikt
+          if (-not $r.IsValid -or $r.Risk -ne 'Low' -or $r.Warnings) { throw 'Test-MtPack did not pass.' }
+          Import-Module Pester -RequiredVersion 5.7.1
+          $c = New-PesterConfiguration
+          $c.Run.Path = './unit-tests'
+          $c.Run.Exit = $true
+          Invoke-Pester -Configuration $c
+
+  release:
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Build the Maester 2 zip
+        run: python3 tools/build_maester2.py
+
+      # The release is created with its asset in one call, so it is complete when it is published (needed for
+      # immutable releases, where assets cannot be added afterwards).
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          # The notes: the version's section of CHANGELOG.md, then how to install and the community wording.
+          python3 - "$version" > "$RUNNER_TEMP/notes.md" <<'PY'
+          import re, sys
+          v = sys.argv[1]
+          log = open('CHANGELOG.md', encoding='utf-8').read()
+          m = re.search(r'(?ms)^## ' + re.escape(v) + r'[ \t]*\n(.*?)(?=^## |\Z)', log)
+          if not m or not m.group(1).strip():
+              sys.exit(f'CHANGELOG.md has no section for {v}.')
+          print(m.group(1).strip())
+          print()
+          print('**Install.** Maester 3: `Install-MtPack alventech/maester-pack-nsm-gp-ikt/nsm-gp-ikt`. '
+                f'Maester 2.x: unpack `nsm-gp-ikt-maester2-{v}.zip` into `tests/Custom/`.')
+          print()
+          print('A free community pack under the MIT licence. Not made or endorsed by NSM, the Maester project or '
+                'Microsoft, and with no support agreement or warranty.')
+          PY
+          # A checksum, so a user can check that the zip is the one this workflow built.
+          sum=$(sha256sum "dist/nsm-gp-ikt-maester2-${version}.zip" | cut -d' ' -f1)
+          printf '\nSHA-256 of `nsm-gp-ikt-maester2-%s.zip`: `%s`\n' "$version" "$sum" >> "$RUNNER_TEMP/notes.md"
+          gh release create "$GITHUB_REF_NAME" "dist/nsm-gp-ikt-maester2-${version}.zip" \
+            --repo "$GITHUB_REPOSITORY" --title "NSM GP-IKT 2.1 pack ${version}" --verify-tag \
+            --notes-file "$RUNNER_TEMP/notes.md"

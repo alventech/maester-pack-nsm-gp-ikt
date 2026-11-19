@@ -1,0 +1,106 @@
+{
+  "$schema": "https://maester.dev/schemas/maester-pack-1.0.json",
+  "Id": "alventech.nsm-gp-ikt",
+  "Guid": "cedf1cfd-9726-46e8-9c57-2fe14ab2ee19",
+  "Name": "NSM GP-IKT 2.1",
+  "Description": "Måler NSMs grunnprinsipper for IKT-sikkerhet 2.1 og tiltakene i NSM-varselet om høyt cyberrisikonivå (27.10.2026) i Entra ID, Microsoft 365 og Intune, på NSMs skala høy, moderat og liten grad. Gratis fellesskapspakke (MIT), ikke laget av NSM.",
+  "Version": "0.3.0",
+  "Publisher": "alventech",
+  "License": "MIT",
+  "Guide": "maester-pack.guide.json",
+  "Banner": "assets/banner.png",
+  "RequiresMaester": ">=3.0",
+  "Code": "NSM",
+  "Suites": [
+    "tests"
+  ],
+  "Helpers": [
+    "helpers"
+  ],
+  "Uses": {
+    "Services": [
+      "Graph"
+    ],
+    "GraphScopes": [
+      "AccessReview.Read.All",
+      "AttackSimulation.Read.All",
+      "AuditLog.Read.All",
+      "Device.Read.All",
+      "DeviceManagementConfiguration.Read.All",
+      "DeviceManagementManagedDevices.Read.All",
+      "Directory.Read.All",
+      "DirectoryRecommendations.Read.All",
+      "Policy.Read.All",
+      "RoleManagement.Read.Directory",
+      "RoleManagementPolicy.Read.Directory",
+      "SecurityEvents.Read.All"
+    ],
+    "Network": [],
+    "Modules": [],
+    "TenantWrites": []
+  },
+  "Categories": [
+    "Microsoft 365",
+    "Identity",
+    "Devices",
+    "Compliance"
+  ],
+  "Report": {
+    "Navigation": [
+      {
+        "Title": "Oversikt",
+        "View": "pack"
+      },
+      {
+        "Section": "Resultater",
+        "Items": [
+          {
+            "Title": "Alle tester",
+            "Id": "alle",
+            "View": "tests"
+          },
+          {
+            "Title": "Gjenstår",
+            "Id": "gjenstar",
+            "View": "tests",
+            "Result": "Failed"
+          },
+          {
+            "Title": "Høy grad",
+            "Id": "hoy-grad",
+            "View": "tests",
+            "Result": "Passed"
+          }
+        ]
+      },
+      {
+        "Section": "Kom i gang",
+        "Items": [
+          {
+            "Title": "Forutsetninger",
+            "Id": "start",
+            "View": "guide",
+            "Page": "start"
+          },
+          {
+            "Title": "Koble til",
+            "Id": "connect",
+            "View": "guide",
+            "Page": "connect"
+          },
+          {
+            "Title": "Kjøre",
+            "Id": "run",
+            "View": "guide",
+            "Page": "run"
+          }
+        ]
+      },
+      {
+        "Title": "Om pakken",
+        "Id": "about",
+        "View": "about"
+      }
+    ]
+  }
+}

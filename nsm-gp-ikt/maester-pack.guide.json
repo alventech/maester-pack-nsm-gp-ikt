@@ -1,0 +1,102 @@
+{
+  "$schema": "https://maester.dev/schemas/maester-pack-guide-1.0.json",
+  "Summary": "Måler tiltak fra NSMs grunnprinsipper for IKT-sikkerhet 2.1 i Entra ID, Microsoft 365, Intune og Defender, på NSMs skala høy, moderat og liten grad. Gratis fellesskapspakke (community pack) under MIT-lisensen, åpen for bidrag fra alle. Ikke laget eller godkjent av NSM, Maester-prosjektet eller Microsoft, og uten støtteavtale eller garanti.",
+  "Prerequisites": [
+    {
+      "Text": "Maester 3.0 eller nyere (forhåndsversjon).",
+      "Command": "Install-Module Maester -AllowPrerelease -Scope CurrentUser"
+    },
+    {
+      "Text": "PowerShell 7.4 eller nyere."
+    },
+    {
+      "Text": "En konto som kan lese tenanten, for eksempel med rollen Global Reader."
+    },
+    {
+      "Text": "Lisenser for det testene leser: Entra ID P1 (Conditional Access), Entra ID P2 eller Entra ID Governance (PIM, access reviews), Intune (enheter), Defender for Identity og Defender for Office 365 Plan 2. Mangler en lisens, hoppes testen over med en begrunnelse."
+    }
+  ],
+  "Connect": {
+    "Steps": [
+      {
+        "Text": "Koble til Microsoft Graph med tillatelsene Maester ber om, pluss de tre pakken trenger i tillegg. Pålogging skjer i nettleseren.",
+        "Command": "$scopes = (Get-MtGraphScope) + 'AttackSimulation.Read.All', 'RoleManagementPolicy.Read.Directory', 'SecurityEvents.Read.All'; Connect-MgGraph -Scopes $scopes"
+      }
+    ],
+    "Notes": [
+      "Pakken trenger bare lesetillatelser. Den skriver aldri til tenanten.",
+      "Mangler tilkoblingen en tillatelse, hoppes testen som trenger den, over med en begrunnelse. Den gir ikke liten grad.",
+      "Ikke bruk -UseDeviceCode: pålogging med device code er en kjent vei for phishing og blokkeres ofte av Conditional Access."
+    ]
+  },
+  "Run": {
+    "Commands": [
+      {
+        "Text": "Bare denne pakken, med tilkoblingen over",
+        "Command": "Invoke-Maester -Pack NSM -SkipBuiltIn -SkipGraphConnect"
+      },
+      {
+        "Text": "Sammen med Maesters egne tester",
+        "Command": "Invoke-Maester -Pack NSM -SkipGraphConnect"
+      }
+    ],
+    "Notes": [
+      "Første linje i hvert resultat er NSM-vurdering: Høy grad, Moderat grad eller Liten grad. Bare høy grad er bestått (Passed); moderat og liten grad vises som Failed, slik at rapporten viser hva som gjenstår.",
+      "Andre linje, Gjelder, sier hva vurderingen gjelder for. Ingen test dekker et helt NSM-tiltak.",
+      "Resultatene inneholder navn på policyer, roller og kontoer fra tenanten. Behandle rapporten som intern."
+    ],
+    "Options": [
+      {
+        "Name": "EmergencyAccessAccounts",
+        "Default": "ingen",
+        "Text": "Maesters egen innstilling: nødtilgangskontoene, med Id eller UserPrincipalName. De holdes utenfor tellingene i 1002, 1005 og 1006."
+      },
+      {
+        "Name": "NsmGpIkt.BaselinePolicyPattern",
+        "Default": "(?i)\\bCIS\\b|baseline",
+        "Text": "Regulært uttrykk for navnene på policyer som teller som security baseline (3010)."
+      },
+      {
+        "Name": "NsmGpIkt.MinimumWindowsBuild",
+        "Default": "26100",
+        "Text": "Laveste Windows-bygg som regnes som støttet (3007). 26100 er Windows 11 24H2."
+      },
+      {
+        "Name": "NsmGpIkt.AllowedWindowsBuilds",
+        "Default": "ingen",
+        "Text": "Bygg under minimum som dere kjører med støtte, som Windows LTSC: [17763, 19044] (3007)."
+      }
+    ]
+  },
+  "AppOnly": {
+    "Supported": true,
+    "Methods": {
+      "Certificate": true,
+      "ClientSecret": true,
+      "ManagedIdentity": true,
+      "WorkloadIdentity": true
+    },
+    "Text": "Gi en app eller managed identity de 12 Graph-tillatelsene i Uses.GraphScopes som application permissions, koble til med Connect-MgGraph og kjør Invoke-Maester -Pack NSM -SkipGraphConnect. Testet med sertifikat: samme resultater som med pålogget bruker. Bruk helst sertifikat, managed identity eller workload identity federation framfor client secret."
+  },
+  "Support": {
+    "Pack": "https://github.com/alventech/maester-pack-nsm-gp-ikt/issues"
+  },
+  "Links": [
+    {
+      "Text": "NSMs grunnprinsipper for IKT-sikkerhet",
+      "Url": "https://nsm.no/regelverk-og-hjelp/rad-og-anbefalinger/grunnprinsipper-for-ikt-sikkerhet/"
+    },
+    {
+      "Text": "NSM hever det nasjonale cyberrisikonivået til høyt (varsel 27.10.2026)",
+      "Url": "https://nsm.no/aktuelt/nsm-hever-det-nasjonale-cyberrisikonivaet-til-hoyt"
+    },
+    {
+      "Text": "Dekning per NSM-tiltak (engelsk)",
+      "Url": "https://github.com/alventech/maester-pack-nsm-gp-ikt/blob/main/docs/coverage.md"
+    },
+    {
+      "Text": "Forskjell fra Maesters egne tester (engelsk)",
+      "Url": "https://github.com/alventech/maester-pack-nsm-gp-ikt/blob/main/docs/maester-comparison.md"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+name: Validate
+
+# Runs only in the repository this file is committed to. It never reaches a tenant and uses no secrets.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# The run's token can only read this repository's code.
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Pinned to a commit, not a tag: a moved tag cannot change what runs. v7.0.1.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Generated files are current
+        run: |
+          python3 tools/export_frameworks.py
+          python3 tools/generate_docs.py
+          if ! git diff --exit-code; then
+            echo "::error::Generated files are out of date. Run these and commit the changes:"
+            echo "  macOS or Linux:  python3 tools/export_frameworks.py && python3 tools/generate_docs.py"
+            echo "  Windows:         py tools\\export_frameworks.py; py tools\\generate_docs.py"
+            echo "Or leave it to the maintainer: say so in the pull request."
+            exit 1
+          fi
+
+      # Exact versions, as tested: a new Maester release candidate cannot fail a run by itself.
+      - name: Test-MtPack
+        shell: pwsh
+        run: |
+          Install-PSResource -Name Maester -Version 3.0.0-rc83 -Prerelease -Scope CurrentUser -TrustRepository
+          Import-Module Maester -RequiredVersion 3.0.0
+          $r = Test-MtPack -Path ./nsm-gp-ikt
+          $r | Format-List Id, Version, IsValid, Risk, Errors, Warnings, Findings
+          if (-not $r.IsValid -or $r.Risk -ne 'Low' -or $r.Warnings) { throw 'Test-MtPack did not pass.' }
+
+      # Every test once from source, without a tenant: each must skip as not connected. A test Maester cannot load
+      # or run (bad metadata, a wrong return value) fails the job.
+      - name: Every test loads and runs
+        shell: pwsh
+        run: |
+          Import-Module Maester -RequiredVersion 3.0.0
+          $results = @(Invoke-MtTest -Path ./nsm-gp-ikt -WarningAction SilentlyContinue)
+          $results | Group-Object Result, ReasonCode | Format-Table Count, Name -AutoSize
+          $broken = @($results | Where-Object ReasonCode -In 'InvalidMetadata', 'InvalidReturn', 'InvalidConfiguration', 'InvalidInstanceId', 'LoadFailed')
+          if ($broken) { throw "Maester could not run $($broken.Count) test(s): $($broken.Id -join ', ')" }
+          $expected = @(Get-ChildItem ./nsm-gp-ikt/tests -Filter 'Test.MP.NSM.*.ps1').Count
+          if ($results.Count -ne $expected) { throw "Expected $expected tests, got $($results.Count)." }
+
+      - name: Unit tests
+        shell: pwsh
+        run: |
+          Install-PSResource -Name Pester -Version 5.7.1 -Scope CurrentUser -TrustRepository
+          Import-Module Pester -RequiredVersion 5.7.1
+          $c = New-PesterConfiguration
+          $c.Run.Path = './unit-tests'
+          $c.Run.Exit = $true
+          $c.Output.Verbosity = 'Detailed'
+          Invoke-Pester -Configuration $c
+
+      # The pack for Maester 2.3.0, as custom tests. A new process: Maester 2 and 3 cannot share one.
+      - name: Maester 2 build
+        shell: pwsh
+        run: |
+          python3 tools/build_maester2.py
+          Install-PSResource -Name Maester -Version 2.3.0 -Scope CurrentUser -TrustRepository
+          pwsh -NoProfile -Command {
+            Import-Module Pester -RequiredVersion 5.7.1
+            $c = New-PesterConfiguration
+            $c.Run.Path = './unit-tests-maester2'
+            $c.Run.Exit = $true
+            $c.Output.Verbosity = 'Detailed'
+            Invoke-Pester -Configuration $c
+          }
+          if ($LASTEXITCODE) { throw 'Maester 2 unit tests failed.' }
