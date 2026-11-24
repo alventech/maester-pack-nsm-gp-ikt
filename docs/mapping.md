@@ -133,7 +133,7 @@ Generated from the catalogue by `tools/generate_docs.py`. Do not edit between th
 
 `planned` in the catalogue lists them, with the signal and what it needs. The larger ones need services beyond
 Microsoft Graph (Azure Resource Manager, Exchange Online) or `ThreatHunting.Read.All`, which the pack does not
-declare today. Azure resources are measured by the Azure Policy initiative for GP-IKT 2.1, not by this pack.
+declare today. Azure resources are measured by the [Azure Policy initiative for GP-IKT 2.1](https://github.com/alventech/azure-policy-nsm-gp-ikt), not by this pack.
 
 ## Changes to the mapping
 

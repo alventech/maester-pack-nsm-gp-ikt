@@ -56,10 +56,10 @@ The map is broader than the tests: it says which control implements a measure, w
 its reading proves. Windows LAPS, for example, supports 2.6.4 in the map, but test 3001 specifies 2.3.7 (no shared
 default passwords); [docs/mapping.md](docs/mapping.md) has the rules.
 
-This pack measures the Microsoft Graph part. The Azure part is measured by a separate Azure Policy initiative that
-groups Microsoft's built-in policies by NSM measure. It will be published as its own free community repository;
-the link is added here when it is public. What is left, such as network, OT and processes, needs an owner's
-attestation.
+This pack measures the Microsoft Graph part. The Azure part is measured by a separate free community project,
+[Azure Policy initiative for NSM GP-IKT 2.1](https://github.com/alventech/azure-policy-nsm-gp-ikt): 132 of Microsoft's built-in policies grouped by 20 NSM
+measures, shown in Azure Policy and in Defender for Cloud's regulatory compliance. What is left, such as network,
+OT and processes, needs an owner's attestation.
 
 ## Repository
 

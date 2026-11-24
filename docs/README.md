@@ -39,7 +39,7 @@ That gives 28 tests for 21 measures, among them 10 of the 15 priority-1 measures
 
 ![GP-IKT 2.1 measures with a test, per area: identify and map, 3 principles, 1 of 13 measures with a test; protect and maintain, 10 principles, 15 of 63; detect, 4 principles, 3 of 23; respond and recover, 4 principles, 0 of 19](images/coverage-by-area.svg)
 
-A measure without a test is not ignored: Azure is measured by an Azure Policy initiative, servers, network and OT by
+A measure without a test is not ignored: Azure is measured by an [Azure Policy initiative](https://github.com/alventech/azure-policy-nsm-gp-ikt), servers, network and OT by
 other tools, and plans, contracts and restore tests are attested by their owner. On-premises Active
 Directory is different: Maester can already read it, through its own
 [Active Directory connection](https://maester.dev/docs/connect-maester/ad-connection-troubleshooting)
